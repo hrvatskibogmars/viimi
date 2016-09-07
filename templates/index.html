@@ -70,24 +70,26 @@
         <!--HOME START-->
         <div id="home"> 
             <div class="slider home-slider clearfix" data-auto-play="8000">
-
-                <div class="slide img-bg clearfix" data-background="{% static 'images/slider/1.jpg' %}">
+                {% for item in cover_list %}
+                <div class="slide img-bg clearfix" data-background="/media/{{ item.image}}">
                     <div class="slider-mask"></div>
                     <div class="caption-box">
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-8 col-md-offset-2">
                                     <div class="liner"></div>
-                                    <h3>Viimi</h3>
-                                    <p>talented people</p>
+                                    <h3>{{item.name}}</h3>
+                                    <p>{{item.text}}</p>
                                     <div class="liner"></div>
                                 </div><!--/.col-md-8-->
                             </div><!--/.row-->
                         </div><!--/.container-->
                     </div><!--/.caption-box-->
                 </div><!--/.slider1-->
+                {% endfor %}
+
                 
-                <div class="slide img-bg clearfix" data-background="{% static 'images/slider/2.jpg' %}">
+                <!--div class="slide img-bg clearfix" data-background="{% static 'images/slider/2.jpg' %}">
                     <div class="slider-mask"></div>
                     <div class="caption-box">
                         <div class="container">
@@ -98,10 +100,10 @@
                                     <p>Description 2</p>
                                     <div class="liner"></div>
                                 </div><!--/.col-md-8-->
-                            </div><!--/.row-->
-                        </div><!--/.container-->
-                    </div><!--/.caption-box-->
-                </div><!--/.slider2-->
+                            <!--/div><!--/.row-->
+                        <!--/div><!--/.container-->
+                    <!--/div><!--/.caption-box-->
+                <!--/div><!--/.slider2-->
                 
                 <div class="slide img-bg clearfix" data-background="{% static 'images/slider/3.jpg' %}">
                     <div class="slider-mask"></div>
