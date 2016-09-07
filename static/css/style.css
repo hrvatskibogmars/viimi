@@ -120,6 +120,11 @@ ul, ol {
 .grey-bg {
 	background: #f0f0f0;
 }
+.viimi-bg{
+    background: #36939C;
+}
+
+
 /* Preloader */
 #preloader {
 	position: fixed;
@@ -188,7 +193,7 @@ ul, ol {
     width: 100%;
 }
 .shrink .for-sticky {
-    background: none repeat scroll 0 0 #1f1f1f;
+    background: none repeat scroll 0 0 #36939C ;
     padding: 5px 0;
 	-webkit-backface-visibility:hidden;
 }
@@ -264,6 +269,14 @@ ul, ol {
 	margin: 20px 0;
 	width: 1px;
 	opacity: 0.6;
+}
+.liner-black {
+    background: none repeat scroll 0 0 #000;
+    display: inline-block;
+    height: 50px;
+    margin: 20px 0;
+    width: 1px;
+    opacity: 0.6;
 }
 .caption-box p {
 	color: #ffffff;
