@@ -171,7 +171,7 @@
     //google map load after all page finish
     $(window).bind("load", function () {
         $('#map_canvas').gmap({
-            'center': '-6.94010,107.62575',
+            'center': '45.812778, 15.977647',
             'zoom': 15,
             scrollwheel: false,
             'disableDefaultUI': false,
@@ -186,7 +186,7 @@
                 var self = this;
                 self.addMarker({
                     'position': this.get('map').getCenter(),
-                    icon: 'images/office-building.png',
+                    icon: 'static/images/office-building.png',
                 }).click(function () {
                     self.openInfoWindow({
                         'content': $('.map-content').html()
