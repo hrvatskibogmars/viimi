@@ -5,8 +5,8 @@ from .models import *
 class ProjectModelAdmin(admin.ModelAdmin):
 	#list_editable = ["name"]
 	list_filter = ["name"]
-	list_display = ["__unicode__","name","image","order","text"]
-	list_editable = ["name","image","order","text"]
+	list_display = ["__unicode__","name","order","text"]
+	list_editable = ["name","order","text"]
 	search_fields = ["name"]
 	class Meta:
 		model = Project
@@ -14,8 +14,8 @@ class ProjectModelAdmin(admin.ModelAdmin):
 class CoverImageModelAdmin(admin.ModelAdmin):
 	#list_editable = ["title"]
 	list_filter = ["name"]
-	list_display = ["__unicode__","name","image","order","text"]
-	list_editable = ["name","image"]
+	list_display = ["__unicode__","name","order","text"]
+	list_editable = ["name","order"]
 	search_fields = ["name"]
 	class Meta:
 		model = CoverImage
