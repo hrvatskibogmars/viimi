@@ -443,6 +443,9 @@ ul, ol {
 .bg1 .para-img{
 	background-image: url("../images/bg/1.jpg");
 }
+.bg11 .para-img{
+    background-image: url("../images/bg/11.png");
+}
 .bg2 .para-img{
 	background-image: url("../images/bg/2.jpg");
 }
