@@ -44,18 +44,20 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-2 col-xs-6 logo">
-                        	<a href="index.html"><img src="{% static 'images/logo1.png' %}" alt="logo"></a>
+                        	<a href="#"><img id="logo" src="{% static 'images/logo2.png' %}" alt="logo"></a>
                         </div><!--/.logo-->
                         <div class="col-md-10 menu-box hidden-xs hidden-sm">
                             <ul class="navigation">
                                 <li><a href="#home">Home</a></li>
-                                <li><a href="#about">About</a></li>
+                                <li><a href="#team">About</a></li>
                                 <li><a href="#works">Projects</a></li>
                                 <li><a href="#services">Services</a></li>
                                 <li><a href="#contact">Contact</a></li>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://www.facebook.com/Viimi/"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/ViimiLtd"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/viimi-ltd"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                                <li><a href=""><i class="fa fa-pinterest"></i></a></li>
                             </ul>
                         </div><!--/.menu-box-->
                         <div class="box-mobile hidden-lg hidden-md">
@@ -72,42 +74,23 @@
         
         
         <!--HOME START-->
-        <div id="home"> 
-            <div class="slider home-slider clearfix" data-auto-play="8000">
-                {% for item in cover_list %}
-                <div class="slide img-bg clearfix" data-background="/media/{{ item.image}}">
-                    <div class="slider-mask"></div>
-                    <div class="caption-box">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <div class="liner"></div>
-                                    <h3>{{item.name}}</h3>
-                                    <p>{{item.text}}</p>
-                                    <div class="liner"></div>
-                                </div><!--/.col-md-8-->
-                            </div><!--/.row-->
-                        </div><!--/.container-->
-                    </div><!--/.caption-box-->
-                </div><!--/.slider1-->
-                {% endfor %}
-                
-                <div class="slide img-bg clearfix" data-background="{% static 'images/slider/3.jpg' %}">
-                    <div class="slider-mask"></div>
-                    <div class="caption-box">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-8 col-md-offset-2">
-                                    <div class="liner"></div>
-                                    <h3>Text n</h3>
-                                    <p>Description <nav></nav></p>
-                                    <div class="liner"></div>
-                                </div><!--/.col-md-8-->
-                            </div><!--/.row-->
-                        </div><!--/.container-->
-                    </div><!--/.caption-box-->
-                </div><!--/.slider3-->
-                
+        <div id="home" > 
+            <div class="slider home-slider clearfix">
+                    <div class="slide img-bg clearfix" data-background="{% static 'images/overlay2.png' %}">
+                        <div class="slider-mask"></div>
+                        <div class="caption-box">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-8 col-md-offset-2">
+                                        <div class="liner"></div>
+                                        <h3></h3>
+                                        <p> </p>
+                                        <div class="liner"></div>
+                                    </div><!--/.col-md-8-->
+                                </div><!--/.row-->
+                            </div><!--/.container-->
+                        </div><!--/.caption-box-->
+                    </div><!--/.slider1-->
             </div><!--/.slider-->
         </div><!--/home-->
         <!--HOME END-->
@@ -138,17 +121,18 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="team-spacing"></div>
-                                        <h3 class="small-title">Keith Probert MBA</h3>
-                                        <p class="team-post">Management Consulting</p>
-                                        <ul class="team-social">
+                                        <h3 class="small-title" style="text-align: right;">Keith Probert</h3>
+                                        <p class="team-post" style="text-align: right;">Management Consulting</p>
+
+                                        <ul class="team-social" style="text-align: right;">
                                             <li><a href="https://web.facebook.com/keith.probert.18?fref=ts" target="_blank" ><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#" target="_blank" ><i class="fa fa-twitter"></i></a></li>                       
-                                            <li><a href="https://linkedin.com/in/keithprobert" target="_blank" ><i class="fa fa-linkedin"></i></a></li>
-                                            <li><a href="#" target="_blank" ><i class="fa fa-skype"></i></a></li>
+                                            <li>
                                         </ul>
                                      </div>
                                      <div class="col-md-6">
-                                        <img src="{% static 'images/team/keith.jpg' %}" alt="team">
+                                        <img class="personal-photo"src="{% static 'images/team/keith.jpg' %}" alt="team">
+                                        <a class="clear" href="https://linkedin.com/in/keithprobert" target="_blank"><img src="{% static 'images/viewmy.png' %}" align="right" height="33px" width="160px" style="
+                                        padding-top:5px;"></a>
                                      </div>
                                 </div>
                                         <div class="spacing40 clearboth"></div>
@@ -161,22 +145,20 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <img src="{% static 'images/team/izabela.jpg' %}" alt="team">
+                                        <a class="clear" href="https://www.linkedin.com/in/izabela01" target="_blank"><img src="{% static 'images/viewmy.png' %}"  style="
+                                        padding-top:5px;" height="33px" width="160px"></a>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="team-spacing"></div>
                                             <h3 class="small-title">Izabela Probert</h3>
                                             <p class="team-post">Management Consulting</p>
                                             <ul class="team-social">
-                                                <li><a href="https://web.facebook.com/keith.probert.18?fref=ts" target="_blank" ><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#" target="_blank" ><i class="fa fa-twitter"></i></a></li>                       
-                                                <li><a href="https://linkedin.com/in/keithprobert" target="_blank" ><i class="fa fa-linkedin"></i></a></li>
-                                                <li><a href="#" target="_blank" ><i class="fa fa-skype"></i></a></li>
-                                            </ul>
-                                    </div>
+                                                <li><a href="https://www.facebook.com/izabelaprobert" target="_blank" ><i class="fa fa-facebook"></i></a></li>           
+                                            </ul>                                    </div>
                                 </div>
                                 <div class="spacing40 clearboth"></div>
-                                <p>Highly skilled Chartered Global Management Accountant with particular emphasis on outsourcing, shared services, change and transition management, workflows, process reviews and controls, corporate cultural challenges, training.</p>
-                                <p>Direct national and international experience within a large number of leading blue-chip organisations on shared service centres, knowledge transfer, communications, programme and project management, finance systems implementations.</p>
+                                <p>Highly skilled Chartered Global Management Accountant with particular emphasis on outsourcing, shared services, change and transition management, workflows, process reviews and controls, corporate cultural challenges, training.
+                                Direct national and international experience within a large number of leading blue-chip organisations on shared service centres, knowledge transfer, communications, programme and project management, finance systems implementations.</p>
                                 <p>Interested in organisations requiring support during times of change, transformation and/or re-structuring. Will travel. Interim Services also available in German and Croatian.</p>
                                 <div class="spacing40"></div>
                             </div><!--/.col-md-6-->
@@ -445,16 +427,8 @@
                 <div class="row">
                     <div class="col-md-8 align-center col-md-offset-2">
                         <h2 class="head-title">Social networks feed</h2>
-                        <p class="sub-title">Let's talk</p>
-                        <div class="liner"></div>
-                        {% cache 60 my_tweets %}
-                        {% get_tweets for "teamsecret" as tweets exclude "replies, retweets" limit 3 %}
-                            <ul>
-                            {% for tweet in tweets %}
-                                <li>{{ tweet.html|safe }}</li>
-                            {% endfor %}
-                            </ul>
-                        {% endcache %}
+                        <p class="sub-title">Follow us!</p>
+                        <a class="twitter-timeline" data-lang="en" data-height="600" data-theme="light" href="https://twitter.com/teamsecret">Tweets by teamsecret</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                         <div class="spacing40"></div>
                     </div><!--/.col-md-8-->
                 </div><!--/.row-->

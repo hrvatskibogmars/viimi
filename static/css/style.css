@@ -199,7 +199,7 @@ ul, ol {
 }
 
 .shrink .navigation li a {
-    color:#000;
+    color:#3E848E;
 
 }
 
@@ -249,7 +249,9 @@ ul, ol {
 	color:#fff;
 }
 /*-------------------SLIDER SECTION----------------------------------*/
-
+.overlay {
+    opacity: 0.5;
+}
 .img-bg {
 	background-position: center center;
 	background-size: cover;
@@ -427,7 +429,7 @@ ul, ol {
     margin: 2px;
     width: 30px;
 }
-.team-inner img{width:100%;}
+.team-inner .personal-photo{width:100%;}
 /*---------------------BIG BACKGROUND SECTION-----------------------------------------*/
 .bg {position:relative;overflow:hidden;}
 .para-img {
