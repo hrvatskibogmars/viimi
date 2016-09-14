@@ -210,18 +210,7 @@
             </div><!--/.container-->
         </div><!--/team-->
         
-        <div class="bg bg11  clearfix">
-			<div class="bg-mask"></div>
-			<div class="para-img"></div>
-			<div class="container big-text">
-				<p>Our Culture</p>
-				<h3>We go where you are</h3>
-				<div class="liner"></div>
-				<div class="clearboth"></div><i class="fa fa-heart-o"></i>
-			</div><!--/.big-text-->
-		</div><!--/.bg-->
-        
-        <div id="works" class="content black-bg">
+        <div id="works" class="content viimi-bg">
         	<div class="container">
                 <div class="row">
                     <div class="col-md-8 align-center col-md-offset-2">
@@ -373,7 +362,7 @@
                 </div><!--/.row-->
             </div><!--/.container-->
         </div><!--/.works-detail-->
-        <div id="services" class="content black-bg">
+        <div id="services" class="content viimi-bg">
         	<div class="container">
                 <div class="row">
                     <div class="col-md-8 align-center col-md-offset-2">
@@ -437,7 +426,7 @@
 
             </div><!--/.container-->
         </div><!--/services-detail-->
-        <div id="contact" class="content black-bg">
+        <div id="contact" class="content viimi-bg">
         	<div class="container">
                 <div class="row">
                     <div class="col-md-8 align-center col-md-offset-2">
@@ -450,6 +439,41 @@
                 </div><!--/.row-->
             </div><!--/.container-->
         </div><!--/contact-->
+        
+        <div id="feed" class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 align-center col-md-offset-2">
+                        <h2 class="head-title">Social networks feed</h2>
+                        <p class="sub-title">Let's talk</p>
+                        <div class="liner"></div>
+                        {% cache 60 my_tweets %}
+                        {% get_tweets for "teamsecret" as tweets exclude "replies, retweets" limit 3 %}
+                            <ul>
+                            {% for tweet in tweets %}
+                                <li>{{ tweet.html|safe }}</li>
+                            {% endfor %}
+                            </ul>
+                        {% endcache %}
+                        <div class="spacing40"></div>
+                    </div><!--/.col-md-8-->
+                </div><!--/.row-->
+            </div><!--/.container-->
+        </div><!--/contact-->
+        
+       
+
+        <div class="bg bg11 clearfix">
+            <div class="bg-mask"></div>
+            <div class="para-img"></div>
+            <div class="container big-text">
+                <p>Our Culture</p>
+                <h3>We go where you are</h3>
+                <div class="liner"></div>
+                <div class="clearboth"></div><i class="fa fa-heart-o"></i>
+            </div><!--/.big-text-->
+        </div><!--/.bg-->
+
         <div id="client" class="content align-center">
             <div class="container">
                 <div class="row">
@@ -487,18 +511,6 @@
                 </div><!--/.row-->
             </div><!--/.container-->
         </div><!--/client-->
-        
-
-
-        {% cache 60 my_tweets %}
-        {% get_tweets for "teamsecret" as tweets exclude "replies, retweets" limit 3 %}
-        <ul>
-        {% for tweet in tweets %}
-            <li>{{ tweet.html|safe }}</li>
-        {% endfor %}
-        </ul>
-        {% endcache %}
-  
 
         <div id="map_canvas">
         <!--DISPLAY GOOGLE MAP HERE--></div>
@@ -514,7 +526,7 @@
         </div>
         <!--MAP MARKER CONTENT END-->
         
-        <footer id="footer" class="content black-bg">
+        <footer id="footer" class="content viimi-bg">
         	<div class="container align-center">
                 <div class="spacing40"></div>
             	<p>Made with <i class="fa fa-coffee"></i> in Zagreb, Croatia &copy;2016 <a href="#">yoursite.com</a></p>

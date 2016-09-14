@@ -121,7 +121,7 @@ ul, ol {
 	background: #f0f0f0;
 }
 .viimi-bg{
-    background: #36939C;
+    background: #3E848E;
 }
 
 
@@ -511,6 +511,8 @@ ul, ol {
 .port-filter > li {
     display: inline-block;
 }
+
+
 
 .portfolio-body {
     transition: height 0.3s ease 0s;
@@ -1126,3 +1128,9 @@ input:focus, textarea:focus {
 }
 }
 
+#works, #services, #contact, #footer {
+    color: #FFF;
+}
+#feed{
+    color: #000;
+}
