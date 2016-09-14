@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'web',
+    'twitter_tag',
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,15 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "media")
+
+# settings.py
+# Make sure to replace with your own values, theses are just made up
+
+# Your access token: Access token
+TWITTER_OAUTH_TOKEN = ' 4586784442-vVmJU7iTa9GeB3zmOFexl15aYWy6y9u2yKMyDSB'
+# Your access token: Access token secret
+TWITTER_OAUTH_SECRET = '    RC4dkco2bovMPMu4aFGYOrG0bhpVgpmDWjjL4j0BXaK9M'
+# OAuth settings: Consumer key
+TWITTER_CONSUMER_KEY = '41OeE5Stb02YFDKsjZnxbVDbV'
+# OAuth settings: Consumer secret
+TWITTER_CONSUMER_SECRET = ' BarOeTkEU9vTGoum7wfHHswMB5wnCYIofUm3A0w9fATY48LoML'

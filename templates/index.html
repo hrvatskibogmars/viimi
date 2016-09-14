@@ -1,4 +1,6 @@
-﻿{% load static %}
+{% load static %}
+{% load twitter_tag%}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -110,7 +112,7 @@
         </div><!--/home-->
         <!--HOME END-->
         
-        <div id="about" class="content black-bg">
+        <!--div id="about" class="content black-bg">
         	<div class="container">
                 <div class="row">
                     <div class="col-md-8 align-center col-md-offset-2">
@@ -120,43 +122,71 @@
 						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 						<div class="spacing40"></div>
                     </div><!--/.col-md-8-->
-                </div><!--/.row-->
-            </div><!--/.container-->
-        </div><!--/about-->
-		
+                <!--/div><!--/.row-->
+            <!--div><!--/.container-->
+        <!--/div><!--/about-->
+        
         <div id="team" class="clearfix">
         	<div class="container">
                 <div class="row">
                 	<!--div class="team-slider" data-auto-play="8000"-->
-                        <div class="team-inner clearfix">
-                            <div class="col-md-5">
-                                <div class="team-spacing"></div>
-                                <h3 class="small-title">Keith Probert MBA</h3>
-                                <p class="team-post">Management Consulting</p>
-                                <p>Keith likes to identify with the company, enjoys freedom of speech and democratic relationships, is at his best when free from both control and detail. Works well with, and as, a participative leader, who will consider others and those with whom others can associate. </p>
-                                <p>Keith Probert is especially well equipped to make a positive impact on, and contribution to, any organisation in a variety of ways. He will accomplish this by motivating people to act, generating enthusiasm in others, radiating optimism & creating positive attitudes within the work environment.</p>
+                        <div class="team-inner clearfix" style="padding-top:100px;">
+                            <h2 class="head-title align-center">About us</h2>
                                 <div class="spacing40"></div>
-                                <ul class="team-social">
-                                    <li><a href="https://web.facebook.com/keith.probert.18?fref=ts" target="_blank" ><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" target="_blank" ><i class="fa fa-twitter"></i></a></li>                       
-                                    <li><a href="https://linkedin.com/in/keithprobert" target="_blank" ><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#" target="_blank" ><i class="fa fa-skype"></i></a></li>
-                                </ul>
-                                <div class="spacing40 clearboth"></div>
-                            </div><!--/.col-md-4-->
-                            
-                            <div class="col-md-7">
 
-                                <img src="{% static 'images/team/keith.jpg' %}" alt="team">
-                                <!--img src="{% static 'images/team/big1.jpg' %}" alt="team"-->
-                            </div><!--/.col-md-7-->
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="team-spacing"></div>
+                                        <h3 class="small-title">Keith Probert MBA</h3>
+                                        <p class="team-post">Management Consulting</p>
+                                        <ul class="team-social">
+                                            <li><a href="https://web.facebook.com/keith.probert.18?fref=ts" target="_blank" ><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#" target="_blank" ><i class="fa fa-twitter"></i></a></li>                       
+                                            <li><a href="https://linkedin.com/in/keithprobert" target="_blank" ><i class="fa fa-linkedin"></i></a></li>
+                                            <li><a href="#" target="_blank" ><i class="fa fa-skype"></i></a></li>
+                                        </ul>
+                                     </div>
+                                     <div class="col-md-6">
+                                        <img src="{% static 'images/team/keith.jpg' %}" alt="team">
+                                     </div>
+                                </div>
+                                        <div class="spacing40 clearboth"></div>
+                                        <p>Keith likes to identify with the company, enjoys freedom of speech and democratic relationships, is at his best when free from both control and detail. Works well with, and as, a participative leader, who will consider others and those with whom others can associate. </p>
+                                        <p>Keith Probert is especially well equipped to make a positive impact on, and contribution to, any organisation in a variety of ways. He will accomplish this by motivating people to act, generating enthusiasm in others, radiating optimism & creating positive attitudes within the work environment.</p>
+                                        <div class="spacing40"></div>
+                            </div><!--/.col-md-6-->
+                            
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="{% static 'images/team/izabela.jpg' %}" alt="team">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="team-spacing"></div>
+                                            <h3 class="small-title">Izabela Probert</h3>
+                                            <p class="team-post">Management Consulting</p>
+                                            <ul class="team-social">
+                                                <li><a href="https://web.facebook.com/keith.probert.18?fref=ts" target="_blank" ><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="#" target="_blank" ><i class="fa fa-twitter"></i></a></li>                       
+                                                <li><a href="https://linkedin.com/in/keithprobert" target="_blank" ><i class="fa fa-linkedin"></i></a></li>
+                                                <li><a href="#" target="_blank" ><i class="fa fa-skype"></i></a></li>
+                                            </ul>
+                                    </div>
+                                </div>
+                                <div class="spacing40 clearboth"></div>
+                                <p>Highly skilled Chartered Global Management Accountant with particular emphasis on outsourcing, shared services, change and transition management, workflows, process reviews and controls, corporate cultural challenges, training.</p>
+                                <p>Direct national and international experience within a large number of leading blue-chip organisations on shared service centres, knowledge transfer, communications, programme and project management, finance systems implementations.</p>
+                                <p>Interested in organisations requiring support during times of change, transformation and/or re-structuring. Will travel. Interim Services also available in German and Croatian.</p>
+                                <div class="spacing40"></div>
+                            </div><!--/.col-md-6-->
                         </div><!--/.team-inner-->
                         
-                        <div class="team-inner clearfix">
+                        <!--div class="team-inner clearfix">
                           <div class="col-md-7">
                                 <img src="{% static 'images/team/izabela.jpg' %}" alt="team">
                             </div><!--/.col-md-7-->
-                            <div class="col-md-5">
+                            <!--div class="col-md-5">
                                 <div class="team-spacing"></div>
                                 <h3 class="small-title">Izabela Probert</h3>
                                 <p class="team-post">Management Consulting</p>
@@ -172,15 +202,15 @@
                                 </ul>
                                 <div class="spacing40 clearboth"></div>
                             </div><!--/.col-md-4-->
-                        </div><!--/.team-inner-->
-                        </div><!--/.team-inner-->
+                        <!--/div><!--/.team-inner-->
+                        <!--/div><!--/.team-inner-->
                     
                     <!--/div><!--/.team-slider-->
                 </div><!--/.row-->
             </div><!--/.container-->
         </div><!--/team-->
         
-        <div class="bg bg11 clearfix">
+        <div class="bg bg11  clearfix">
 			<div class="bg-mask"></div>
 			<div class="para-img"></div>
 			<div class="container big-text">
@@ -457,10 +487,16 @@
                 </div><!--/.row-->
             </div><!--/.container-->
         </div><!--/client-->
-                
+        
+        {% get_tweets for "teamsecret" as tweets %}
+        <ul>
+        {% for tweet in tweets %}
+            <li>{{ tweet.html|safe }}</li>
+        {% endfor %}
+        </ul>
+
         <div id="map_canvas">
         <!--DISPLAY GOOGLE MAP HERE--></div>
-        
         <!--MAP MARKER CONTENT-->
         <div class="hidden map-content">
         	<div class="box-map">

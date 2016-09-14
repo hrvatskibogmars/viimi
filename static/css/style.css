@@ -193,10 +193,16 @@ ul, ol {
     width: 100%;
 }
 .shrink .for-sticky {
-    background: none repeat scroll 0 0 #36939C ;
+    background: none repeat scroll 0 0 #FFF;
     padding: 5px 0;
 	-webkit-backface-visibility:hidden;
 }
+
+.shrink .navigation li a {
+    color:#000;
+
+}
+
 .box-mobile {
     float: right;
     padding-right: 30px;
@@ -393,7 +399,7 @@ ul, ol {
     margin-bottom: 20px;
     text-transform: uppercase;
 }
-.team-spacing{height:200px;width:100%;}
+.team-spacing{height:100px;width:100%;}
 #team .owl-pagination {
     height: 80px;
     margin-top: -80px;
