@@ -1,5 +1,5 @@
 {% load static %}
-{% load twitter_tag%}
+{% load twitter_tag cache%}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -488,12 +488,17 @@
             </div><!--/.container-->
         </div><!--/client-->
         
-        {% get_tweets for "teamsecret" as tweets %}
+
+
+        {% cache 60 my_tweets %}
+        {% get_tweets for "teamsecret" as tweets exclude "replies, retweets" limit 3 %}
         <ul>
         {% for tweet in tweets %}
             <li>{{ tweet.html|safe }}</li>
         {% endfor %}
         </ul>
+        {% endcache %}
+  
 
         <div id="map_canvas">
         <!--DISPLAY GOOGLE MAP HERE--></div>
