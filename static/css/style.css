@@ -121,10 +121,6 @@ ul, ol {
 .grey-bg {
 	background: #f0f0f0;
 }
-.viimi-bg{
-    background: #3E848E;
-}
-
 
 /* Preloader */
 #preloader {
@@ -1139,10 +1135,22 @@ input:focus, textarea:focus {
 }
 
 /*-----------------------------------------SIDEBAR SECTION-------------------------------------------*/
-/*.logo{
-    content:url('../images/logo3.png')
+
+.viimi-bg{
+    background: #3E848E;
 }
-*/
+
+.footer-bg{
+    background: #231F20;
+}
+
 .change-logo{
     content:url('../images/logo2.png')
+}
+.footer-name{
+    color: #FFF;
+}
+.footer-skill{
+    color: #3E848E;
+
 }
