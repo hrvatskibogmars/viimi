@@ -18,7 +18,18 @@
         topSpacing: 0,
         className: 'shrink'
     });
+    
 	
+    //change logo on scroll
+    $(window).scroll(function() {
+    if ($(document).scrollTop() > 30) {
+        $('.logo').addClass('change-logo');
+    }
+    else {
+        $('.logo').removeClass('change-logo');
+    }
+    });
+
 	//create menu for tablet/mobile
 	$(".menu-box .navigation").clone(false).find("ul,li").removeAttr("id").remove(".sub-menu").appendTo($(".mobile-menu"));
 	$(".mobile-menu .sub-menu").remove();
