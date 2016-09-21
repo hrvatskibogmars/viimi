@@ -1158,3 +1158,11 @@ input:focus, textarea:focus {
     vertical-align: middle;
     float: none;
 }
+.twitter-timeline{
+    width: 100%;
+}
+#works, #works-detail,#team{
+    border-left-width: 100px;
+    border-left-color: #3E848E;
+    border-left-style: solid;
+}
