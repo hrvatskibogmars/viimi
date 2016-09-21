@@ -1161,7 +1161,7 @@ input:focus, textarea:focus {
 .twitter-timeline{
     width: 100%;
 }
-#works, #works-detail,#team{
+#works, #works-detail,#team,#clients, #clients-detail{
     border-left-width: 100px;
     border-left-color: #3E848E;
     border-left-style: solid;
