@@ -20,5 +20,16 @@ class CoverImageModelAdmin(admin.ModelAdmin):
 	class Meta:
 		model = CoverImage
 
+
+class ClientImageModelAdmin(admin.ModelAdmin):
+	#list_editable = ["title"]
+	list_filter = ["name"]
+	list_display = ["__unicode__","name","order"]
+	list_editable = ["name","order"]
+	search_fields = ["name"]
+	class Meta:
+		model = CoverImage
+
 admin.site.register(Project, ProjectModelAdmin)
 admin.site.register(CoverImage,CoverImageModelAdmin)
+admin.site.register(Client,ClientImageModelAdmin)

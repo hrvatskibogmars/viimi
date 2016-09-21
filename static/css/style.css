@@ -398,7 +398,7 @@ ul, ol {
     margin-bottom: 20px;
     text-transform: uppercase;
 }
-.team-spacing{height:100px;width:100%;}
+.team-spacing{height:80px;width:100%;}
 #team .owl-pagination {
     height: 80px;
     margin-top: -80px;
@@ -1161,8 +1161,27 @@ input:focus, textarea:focus {
 .twitter-timeline{
     width: 100%;
 }
+.team-line{
+    border-color: #3E848E;
+    height: 5px;
+
+}
 #works, #works-detail,#team,#clients, #clients-detail{
-    border-left-width: 100px;
+    border-left-width: 50px;
     border-left-color: #3E848E;
     border-left-style: solid;
+}
+.client-image{
+    height: 100px;
+    padding-top: 40px;
+}
+
+.mr{
+    text-align-last: right;
+    text-align: justify;
+}
+
+.mrs{
+    text-align-last: left;
+    text-align: justify;
 }

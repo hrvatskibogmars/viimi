@@ -35,3 +35,18 @@ class CoverImage(models.Model):
 
     def get_absolute_url(self):
         return reverse("detail", kwargs={"id":self.id})
+
+
+class Client(models.Model):
+    name  = models.CharField(max_length=100,blank=True)
+    image = models.FileField(null=True,blank=True,upload_to='client/')
+    order = models.CharField(max_length=15,blank=True)
+
+    class Meta:
+        ordering = ["order"]
+
+    def __unicode__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return reverse("detail", kwargs={"id":self.id})
