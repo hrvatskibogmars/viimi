@@ -387,7 +387,7 @@ ul, ol {
     text-align: center;
     width: 40px;
 }
-.team-social a:hover{color:#1f1f1f;background:#fff;}
+.team-social a:hover{color:#3E848E;background:#fff;}
 #team .small-title {
     margin: 0;
 }
@@ -398,7 +398,7 @@ ul, ol {
     margin-bottom: 20px;
     text-transform: uppercase;
 }
-.team-spacing{height:80px;width:100%;}
+.team-spacing{height:70px;width:100%;}
 #team .owl-pagination {
     height: 80px;
     margin-top: -80px;
@@ -1184,4 +1184,10 @@ input:focus, textarea:focus {
 .mrs{
     text-align-last: left;
     text-align: justify;
+}
+.pdf:hover{
+    color: #3E848E;
+}
+.pdf-text:hover{
+    color: #3E848E;
 }
