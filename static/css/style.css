@@ -1152,5 +1152,9 @@ input:focus, textarea:focus {
 }
 .footer-skill{
     color: #3E848E;
-
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }

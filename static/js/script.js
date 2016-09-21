@@ -24,9 +24,13 @@
     $(window).scroll(function() {
     if ($(document).scrollTop() > 30) {
         $('.logo').addClass('change-logo');
+        $('.logo').addClass('vcenter');
+
     }
     else {
         $('.logo').removeClass('change-logo');
+        $('.logo').addClass('vcenter');
+
     }
     });
 
