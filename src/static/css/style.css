@@ -178,7 +178,7 @@ ul, ol {
 	text-transform: uppercase;
 }
 .navigation .current > a,.navigation li a:hover {
-    color: #bfbfbf;
+    color: #FFF;
 }
 .for-sticky {
     padding: 20px 0;
@@ -1145,7 +1145,8 @@ input:focus, textarea:focus {
 }
 
 .change-logo{
-    content:url('../images/logo2.png')
+    content:url('../images/viimi-logo.png');
+    padding: 30px 20px;
 }
 .footer-name{
     color: #FFF;
@@ -1189,5 +1190,8 @@ input:focus, textarea:focus {
     color: #3E848E;
 }
 .pdf-text:hover{
+    color: #3E848E;
+}
+.about-name{
     color: #3E848E;
 }
