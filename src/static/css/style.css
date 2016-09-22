@@ -177,8 +177,8 @@ ul, ol {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
-.navigation .current > a,.navigation li a:hover {
-    color: #FFF;
+.navigation li a:hover {
+    color: #231F20;
 }
 .for-sticky {
     padding: 20px 0;
@@ -383,7 +383,7 @@ ul, ol {
     font-size: 16px;
     height: 40px;
     line-height: 33px;
-    margin-right: 2px;
+    /*margin-right: 2px;*/
     text-align: center;
     width: 40px;
 }
@@ -1194,4 +1194,9 @@ input:focus, textarea:focus {
 }
 .about-name{
     color: #3E848E;
+}
+.fullscreen{
+}
+.shrink li a:hover {
+    color: #231F20;
 }
