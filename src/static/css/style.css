@@ -1146,7 +1146,7 @@ input:focus, textarea:focus {
 
 .change-logo{
     content:url('../images/viimi-logo.png');
-    padding: 30px 20px;
+    padding: 25px;
 }
 .footer-name{
     color: #FFF;
