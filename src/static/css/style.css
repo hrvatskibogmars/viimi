@@ -1146,6 +1146,9 @@ input:focus, textarea:focus {
     background: #231F20;
 }
 
+.logo{
+    padding-top: 15px;
+}
 .change-logo{
     content:url('../images/viimi-logo.png');
     padding-top: 25px;
