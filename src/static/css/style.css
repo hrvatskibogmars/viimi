@@ -253,6 +253,7 @@ ul, ol {
 }
 .img-bg {
 	background-position: center center;
+    background-repeat: no-repeat;
 	background-size: cover;
 }
 .slider-mask {
@@ -1135,9 +1136,13 @@ input:focus, textarea:focus {
 
 }
 
+
 .client-image{
     height: 100px;
     padding-top: 40px;
+}
+#client-details{
+    padding-bottom: 50px;
 }
 
 .mr{
@@ -1167,14 +1172,31 @@ input:focus, textarea:focus {
     font-size:12px;
 }
 /*-----------------------------media queries-----------------------------------*/
+@media (max-width: 768px){
+    .team-social{
+    padding-bottom: 5px;
+}
+.twitter-timeline{
+    width: 80%;
+}
+.client-image{
+    height: 80px;
+}
+
+}
+
+
 @media (min-width:768px) and (max-width:979px) {
 .about-name{
     text-align: center;
 }
 .twitter-timeline{
     height: 300px;
+    width: 80%;
 }
-
+.team-social{
+    padding-bottom: 5px;
+}
 
 .team-spacing{height:100px;}
 .team-inner img {
