@@ -1092,51 +1092,13 @@ input:focus, textarea:focus {
     text-transform: uppercase;
 }
 .pagination > li > a, .pagination > li > span{color:inherit;}
-/*-----------------------------media queries-----------------------------------*/
-@media (min-width:768px) and (max-width:979px) {
-.team-spacing{height:100px;}
-.team-inner img {
-    max-width: 500px;
-}
-.team-inner{text-align:center;}
-.port-filter > li{margin-bottom:5px;}
-}
-@media (max-width: 767px) {
-.caption-box .liner{display:none;}
-.caption-box {
-    padding: 20% 0;
-}
-.caption-box h3 {
-    font-size: 40px;
-}
-.team-spacing {
-    height: 50px;
-}
-.team-inner img {
-    max-width: 500px;
-}
-.team-inner{text-align:center;}
-.port-filter > li{margin-bottom:5px;}
-.blog-box > a, .single-blog .blog-title{padding-left:0;}
-.post-date {
-    left: auto;
-    margin: 0;
-    position: relative;
-    top: auto;
-}
-.blog-title {
-    font-size: 23px;
-}
-}
 
-#works, #services, #contact, #footer {
-    color: #FFF;
-}
-#feed{
-    color: #000;
-}
 
-/*-----------------------------------------SIDEBAR SECTION-------------------------------------------*/
+#works, #works-detail,#team,#clients, #clients-detail{
+    border-left-width: 50px;
+    border-left-color: #3E848E;
+    border-left-style: solid;
+}
 
 .viimi-bg{
     background: #3E848E;
@@ -1172,11 +1134,7 @@ input:focus, textarea:focus {
     height: 5px;
 
 }
-#works, #works-detail,#team,#clients, #clients-detail{
-    border-left-width: 50px;
-    border-left-color: #3E848E;
-    border-left-style: solid;
-}
+
 .client-image{
     height: 100px;
     padding-top: 40px;
@@ -1205,3 +1163,78 @@ input:focus, textarea:focus {
     color: #231F20;
 }
 */
+.documents{
+    font-size:12px;
+}
+/*-----------------------------media queries-----------------------------------*/
+@media (min-width:768px) and (max-width:979px) {
+.about-name{
+    text-align: center;
+}
+.twitter-timeline{
+    height: 300px;
+}
+
+
+.team-spacing{height:100px;}
+.team-inner img {
+    max-width: 500px;
+}
+.team-inner{text-align:center;}
+.port-filter > li{margin-bottom:5px;}
+}
+
+
+@media screen and (max-width: 780px) {
+.navigation{
+    float:none;
+
+}
+.documents{
+    font-size:12px;
+}
+.caption-box .liner{display:none;}
+/*
+.caption-box {
+    padding: 20% 0;
+}
+*/
+.ourservics-text{text-align: center;}
+
+.caption-box h3 {
+    font-size: 40px;
+}
+.team-spacing {
+    height: 50px;
+}
+.team-inner img {
+    max-width: 500px;
+}
+.team-inner{text-align:center;}
+.port-filter > li{margin-bottom:5px;}
+.blog-box > a, .single-blog .blog-title{padding-left:0;}
+.post-date {
+    left: auto;
+    margin: 0;
+    position: relative;
+    top: auto;
+}
+.blog-title {
+    font-size: 23px;
+}
+
+#works, #works-detail,#team,#clients, #clients-detail{
+    border-left-width: 20px;
+    border-left-color: #3E848E;
+    border-left-style: solid;
+}
+}
+
+#works, #services, #contact, #footer {
+    color: #FFF;
+}
+#feed{
+    color: #000;
+}
+
+/*-----------------------------------------SIDEBAR SECTION-------------------------------------------*/
