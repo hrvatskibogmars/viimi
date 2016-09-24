@@ -173,7 +173,7 @@ ul, ol {
 	display: block;
 	font-size: 14px;
 	font-weight: bold;
-	padding: 30px 20px;
+	padding: 30px 12px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
@@ -350,7 +350,7 @@ ul, ol {
 .small-title {
 	font-size: 20px;
 	letter-spacing: 1px;
-	margin: 0 0 20px;
+	margin: 0 0 10px;
 }
 .sub-title {
 	font-size: 14px;
@@ -397,11 +397,11 @@ ul, ol {
 .team-post {
     color: #555555;
     font-size: 13px;
-    letter-spacing: 4px;
-    margin-bottom: 20px;
+    letter-spacing: 2px;
+    margin: 0px;
     text-transform: uppercase;
 }
-.team-spacing{height:70px;width:100%;}
+.team-spacing{height:20px;width:100%;}
 #team .owl-pagination {
     height: 80px;
     margin-top: -80px;
@@ -1127,9 +1127,10 @@ input:focus, textarea:focus {
     vertical-align: middle;
     float: none;
 }
-.twitter-timeline{
-    width: 100%;
+.twitter-timeline-rendered { 
+      width: 80% !important; 
 }
+
 .team-line{
     border-color: #3E848E;
     height: 5px;
@@ -1170,6 +1171,15 @@ input:focus, textarea:focus {
 */
 .documents{
     font-size:12px;
+}
+
+.team-keith{
+    text-align: right;
+    letter-spacing: 1px;
+}
+.team-izabela{
+    text-align: left;
+    letter-spacing: 1px;
 }
 /*-----------------------------media queries-----------------------------------*/
 @media (max-width: 768px){
