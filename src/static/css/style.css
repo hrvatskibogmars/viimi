@@ -177,6 +177,16 @@ ul, ol {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
+
+.nv-social li a {
+    padding: 30px 20px;
+}
+
+.nv-pdf li a {
+    padding: 30px 20px;
+}
+
+
 /*
 .navigation li a:hover {
     color: #231F20;
