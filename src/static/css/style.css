@@ -173,7 +173,7 @@ ul, ol {
 	display: block;
 	font-size: 14px;
 	font-weight: bold;
-	padding: 30px 12px;
+	padding: 30px 7px;
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
@@ -547,7 +547,7 @@ ul, ol {
     color: #333333;
     cursor: default;
 }
-.port-item{max-width:100%;}
+.port-item{height:360px; max-width:100%;}
 .port-ajax {
     display: block;
     position: relative;
@@ -1123,7 +1123,7 @@ input:focus, textarea:focus {
     padding-top: 15px;
 }
 .change-logo{
-    content:url('../images/viimi-logo.png');
+    content:url('../images/viimi-logo2.png');
     padding-top: 25px;
 }
 .footer-name{

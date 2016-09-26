@@ -52,9 +52,10 @@
                         <div class="col-md-10 menu-box hidden-xs hidden-sm">
                             <ul class="navigation">
                                 <li><a href="#home">Home</a></li>
-                                <li><a href="#team">About</a></li>
-                                <li><a href="#works">Projects</a></li>
                                 <li><a href="#services">Services</a></li>
+                                <li><a href="#works">Projects</a></li>
+                                <li><a href="#team">About Us</a></li>
+                                <!--li><a href="#services">Services</a></li-->
                                 <li><a href="#footer">Contact</a></li>
                                 <li><a class="external" href="https://twitter.com/ViimiLtd" target="_blank"><i class="fa fa-twitter"></i></a></li>
                                 <li><a  class="external" href="https://www.facebook.com/Viimi/" target="_blank"><i class="fa fa-facebook"></i></a></li>
@@ -77,7 +78,7 @@
         <div id="home" > 
             <div class="slider home-slider clearfix">
                     <div class="slide img-bg clearfix" data-background="media/{{ cover.image }}">
-                    <div class="slide img-bg clearfix" data-background="{% static 'images/overlay2.png' %}">
+                    <div class="slide img-bg clearfix" data-background="{% static 'images/overlay4.png' %}">
                         <!--div class="slider-mask"></div-->
                         <div class="caption-box">
                             <div class="container">
@@ -100,7 +101,7 @@
         <div id="services" class="content viimi-bg">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 ourservics-text" style="text-align:justify">
+                    <div class="col-md-5  col-md-offset-1 ourservics-text" style="text-align:justify">
                         <h2 class="head-title text-center">Our Services</h2>
                         <br>
                         <br>
@@ -125,18 +126,14 @@
                             <li>Corporate Coaching</li>
                         </ul>
                         <br>
-                        <p>Company information:</p>
-                        <ul>
-                            <li>Company No in UK: 6499115</li>
-                            <li>VAT No: 928 5874 71</li>
-                        </ul>
+           
                         <div class="spacing40"></div>
                     </div><!--/.col-md-6-->
                     <div class="col-md-6 text-center">
                     <h2 class="head-title">Our Tweets</h2>
                     <i class="fa fa-twitter fa-5x"></i>
                     <br>
-                    <a class="twitter-timeline" data-lang="en" data-height="700" data-theme="light" href="https://twitter.com/ViimiLtd">Tweets by ViimiLtd</a> 
+                    <a class="twitter-timeline" data-lang="en" data-height="600" data-theme="light" href="https://twitter.com/ViimiLtd">Tweets by ViimiLtd</a> 
                     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                 </div><!--/.row-->
@@ -157,82 +154,30 @@
             <div class="container">
                 <div class="row">
                     <div class="portfolio-body clearfix">
-                        <div class="col-md-4 col-sm-6 port-item design photography">
+                        {% for item in project_list %}
+                        <div class="col-md-3 col-sm-6 port-item design photography">
                             <a class="port-ajax" href="#" data-link="work1.html">
                                 <div class="port-hov">
                                     <div class="port-content">
-                                        <p class="port-client">Taste of Ink</p>
+                                        <p class="port-client">{{ item.name }}</p>
                                         <h3>The Savior</h3>
                                     </div><!--/.port-content-->
                                 </div><!--/.port-hov-->
-                                <img src="{% static 'images/work/1.jpg' %}" alt="team">
+                                <img src="media/{{ item.image }}" alt="team">
                             </a><!--/.port-ajax-->
-                            <div class="spacing30"></div>
                         </div><!--/.col-md-4-->
-                        
-                        <div class="col-md-4 col-sm-6 port-item design photography">
+                        {% endfor %}
+                        <!--div class="col-md-4 col-sm-6 port-item design photography">
                             <a class="port-ajax" href="#" data-link="work2.html">
                                 <div class="port-hov">
                                     <div class="port-content">
                                         <p class="port-client">Dear Maria</p>
                                         <h3>All Remember</h3>
                                     </div><!--/.port-content-->
-                                </div><!--/.port-hov-->
-                                <img src="{% static 'images/work/2.jpg' %}" alt="team">
+                                <!--/div><!--/.port-hov-->
+                                <!--img src="{% static 'images/work/2.jpg' %}" alt="team">
                             </a><!--/.port-ajax-->
-                            <div class="spacing30"></div>
-                        </div><!--/.col-md-4-->
-                        
-                        <div class="col-md-4 col-sm-6 port-item development">
-                            <a class="port-ajax" href="#" data-link="work3.html">
-                                <div class="port-hov">
-                                    <div class="port-content">
-                                        <p class="port-client">Sweetness</p>
-                                        <h3>Bitter Sweety</h3>
-                                    </div><!--/.port-content-->
-                                </div><!--/.port-hov-->
-                                <img src="{% static 'images/work/3.jpg' %}" alt="team">
-                            </a><!--/.port-ajax-->
-                            <div class="spacing30"></div>
-                        </div><!--/.col-md-4-->
-                        
-                        <div class="col-md-4 col-sm-6 port-item photography">
-                            <a class="port-ajax" href="#" data-link="work4.html">
-                                <div class="port-hov">
-                                    <div class="port-content">
-                                        <p class="port-client">Deluxe</p>
-                                        <h3>Ultra Edition</h3>
-                                    </div><!--/.port-content-->
-                                </div><!--/.port-hov-->
-                                <img src="{% static 'images/work/4.jpg' %}" alt="team">
-                            </a><!--/.port-ajax-->
-                            <div class="spacing30"></div>
-                        </div><!--/.col-md-4-->
-                        
-                        <div class="col-md-4 col-sm-6 port-item development design">
-                            <a class="port-ajax" href="#" data-link="work5.html">
-                                <div class="port-hov">
-                                    <div class="port-content">
-                                        <p class="port-client">Hawnthorne</p>
-                                        <h3>My Tounge</h3>
-                                    </div><!--/.port-content-->
-                                </div><!--/.port-hov-->
-                                <img src="{% static 'images/work/5.jpg' %}" alt="team">
-                            </a><!--/.port-ajax-->
-                            <div class="spacing30"></div>
-                        </div><!--/.col-md-4-->
-                        
-                        <div class="col-md-4 col-sm-6 port-item design">
-                            <a class="port-ajax" href="#" data-link="work1.html">
-                                <div class="port-hov">
-                                    <div class="port-content">
-                                        <p class="port-client">Fooball</p>
-                                        <h3>Never Meant</h3>
-                                    </div><!--/.port-content-->
-                                </div><!--/.port-hov-->
-                                <img src="{% static 'images/work/6.jpg' %}" alt="team">
-                            </a><!--/.port-ajax-->
-                            <div class="spacing30"></div>
+                            <!--div class="spacing30"></div>
                         </div><!--/.col-md-4-->
                     </div><!--/.portfolio-body-->
                 </div><!--/.row-->
@@ -358,6 +303,8 @@
                             <li><a href="https://www.linkedin.com/company/viimi-ltd" target="_blank"><i class="fa fa-linkedin fa-2x pdf"></i></a></li>
                             <li><a href="" target="_blank"><i class="fa fa-instagram fa-2x pdf"></i></a></li>
                             <li><a href="" target="_blank"><i class="fa fa-pinterest fa-2x pdf"></i></a></li>
+                            <li><a href="" target="_blank"><i class="fa fa-google-plus fa-2x pdf"></i></a></li>
+
                         </ul>
                     </div>
                 </div>
@@ -392,6 +339,10 @@
                             <li class="documents"><a href="media/pdf/WebsiteUseFinal.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-2x pdf"></i> Data Protection</a></li>
                         </ul>
                     </div>
+                        <div class="col-lg-10 col-md-12 col-sm-12 ">
+                        <p style="text-align:center;">Company Registration No in UK: 6499115</p><p style="text-align:center;"   > VAT No: 928 5874 71</p>
+                    </div>
+
                 </div>
             </div>
             <div class="container align-center">

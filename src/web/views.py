@@ -13,9 +13,13 @@ def index(request):
 		queryset_cover = None
 	
 	queryset_client = Client.objects.all()
+	queryset_projects = Project.objects.all()
+
+
 
 	context = {
     	"cover": queryset_cover,
     	"client_list": queryset_client,
+    	"project_list": queryset_projects,
     }
 	return render(request, "index.html",context)

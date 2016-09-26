@@ -4,7 +4,7 @@ from django.db import models
 
 class Project(models.Model):
     name = models.CharField(max_length=120, blank=False)
-    image = models.FileField(null=True,blank=True)
+    image = models.FileField(null=True,blank=True,upload_to='cover/')
     order = models.CharField(max_length=15,blank=True)
     text = models.CharField(max_length=500,blank=True)
  
