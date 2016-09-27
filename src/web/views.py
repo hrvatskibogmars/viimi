@@ -12,8 +12,13 @@ def index(request):
 	except ObjectDoesNotExist:
 		queryset_cover = None
 	
+	try:
+		queryset_projects = Project.objects.all().filter(featured=True)
+	except ObjectDoesNotExist:
+		queryset_projects = None
+	
+
 	queryset_client = Client.objects.all()
-	queryset_projects = Project.objects.all()
 
 
 
@@ -21,5 +26,6 @@ def index(request):
     	"cover": queryset_cover,
     	"client_list": queryset_client,
     	"project_list": queryset_projects,
+
     }
 	return render(request, "index.html",context)

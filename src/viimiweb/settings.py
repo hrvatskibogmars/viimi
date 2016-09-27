@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'web',
     'twitter_tag',
+    'ckeditor',
+    'tinymce',
+
 ]
 
 MIDDLEWARE = [
@@ -82,6 +85,7 @@ DATABASES = {
     }
 }
 
+CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
@@ -142,3 +146,9 @@ TWITTER_OAUTH_SECRET = 'RC4dkco2bovMPMu4aFGYOrG0bhpVgpmDWjjL4j0BXaK9M'
 TWITTER_CONSUMER_KEY = '41OeE5Stb02YFDKsjZnxbVDbV'
 # OAuth settings: Consumer secret
 TWITTER_CONSUMER_SECRET = 'BarOeTkEU9vTGoum7wfHHswMB5wnCYIofUm3A0w9fATY48LoML'
+
+CKEDITOR_CONFIGS = {
+    'awesome_ckeditor': {
+        'toolbar': 'Basic',
+    },
+}

@@ -102,38 +102,34 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-5  col-md-offset-1 ourservics-text" style="text-align:justify">
-                        <h2 class="head-title text-center">Our Services</h2>
+                        <h2 class="head-title text-center"><img class="img-responsive" src="{% static 'images/logo3.png' %}" alt="logo" style="display:inline;" width="35px" height="36px"> Our Services</h2>
                         <br>
-                        <br>
-                        <br>
-                        <p>We base ourselves where you are! - Viimi is Croatian for ‘You & Us’ -interim executives ‘Delivering Your Strategy Together’ - across sectors and cultures.</p>
-                        <p>Our mission is to make a positive difference to organizations for their long-term benefit.
-                        </p>
-                        <p>Highly qualified, with extensive experience and an enviable reputation of leading cross-cultural teams in:</p>
-                        <ul>
-                            <li> Asia (China, Japan, Taiwan and Hong Kong)</li>
-                            <li> Europe (UK, Netherlands, Germany, Switzerland, Austria, Ireland, Croatia, Belgium, Luxembourg)</li>
-                            <li> USA (Florida, California, Pennsylvania, Connecticut, Michigan)</li>
-                        </ul>
-                        <br>
-                        <p>Viimi Ltd operate in global markets, delivering your strategy together:</p>
-                        <ul>
-                            <li> Finance Shared Service Centres</li>
-                            <li>Change Management </li>
-                            <li>Transition Management</li>
-                            <li>SAP/Oracle/etc Implementations</li>
-                            <li>Organizational Development</li>
-                            <li>Corporate Coaching</li>
-                        </ul>
-                        <br>
-           
-                        <div class="spacing40"></div>
+                        <div class="white-box">
+                            <p>We base ourselves where you are! - Viimi is Croatian for ‘You & Us’ -interim executives ‘Delivering Your Strategy Together’ - across sectors and cultures.
+                            Our mission is to make a positive difference to organizations for their long-term benefit.
+
+                            Highly qualified, with extensive experience and an enviable reputation of leading cross-cultural teams in:
+
+                            Asia (China, Japan, Taiwan and Hong Kong)
+                            Europe (UK, Netherlands, Germany, Switzerland, Austria, Ireland, Croatia, Belgium, Luxembourg)
+                            USA (Florida, California, Pennsylvania, Connecticut, Michigan)
+                            Viimi Ltd operate in global markets, delivering your strategy together:
+                            Finance Shared Service Centres
+                            Change Management
+                            Transition Management
+                            SAP/Oracle/etc Implementations
+                            Organizational Development
+                            Corporate Coaching
+                            </p>
+                            <br>
+                            <br>
+                            <br>
+                    </div>
                     </div><!--/.col-md-6-->
                     <div class="col-md-6 text-center">
-                    <h2 class="head-title">Our Tweets</h2>
-                    <i class="fa fa-twitter fa-5x"></i>
+                    <h2 class="head-title"><i class="fa fa-twitter fa-1x" style="color:white;"></i>Our Tweets</h2>
                     <br>
-                    <a class="twitter-timeline" data-lang="en" data-height="600" data-theme="light" href="https://twitter.com/ViimiLtd">Tweets by ViimiLtd</a> 
+                    <a class="twitter-timeline" data-lang="en" data-tweet-limit="4" data-theme="light" href="https://twitter.com/ViimiLtd">Tweets by ViimiLtd</a> 
                     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </div>
                 </div><!--/.row-->
@@ -155,30 +151,19 @@
                 <div class="row">
                     <div class="portfolio-body clearfix">
                         {% for item in project_list %}
-                        <div class="col-md-3 col-sm-6 port-item design photography">
-                            <a class="port-ajax" href="#" data-link="work1.html">
-                                <div class="port-hov">
-                                    <div class="port-content">
-                                        <p class="port-client">{{ item.name }}</p>
-                                        <h3>The Savior</h3>
-                                    </div><!--/.port-content-->
-                                </div><!--/.port-hov-->
-                                <img src="media/{{ item.image }}" alt="team">
-                            </a><!--/.port-ajax-->
-                        </div><!--/.col-md-4-->
+                            <div class="col-md-3 col-sm-6 port-item design photography">
+                                <a class="port-ajax" href="#" data-link="work1.html">
+                                    <div class="port-hov">
+                                        <div class="port-content">
+                                            <h3>{{item.name}}</h3>
+                                            <p class="port-client">{{ item.text }}</p>
+                                            
+                                        </div><!--/.port-content-->
+                                    </div><!--/.port-hov-->
+                                    <img src="media/{{ item.image }}" alt="team">
+                                </a><!--/.port-ajax-->
+                            </div><!--/.col-md-4-->
                         {% endfor %}
-                        <!--div class="col-md-4 col-sm-6 port-item design photography">
-                            <a class="port-ajax" href="#" data-link="work2.html">
-                                <div class="port-hov">
-                                    <div class="port-content">
-                                        <p class="port-client">Dear Maria</p>
-                                        <h3>All Remember</h3>
-                                    </div><!--/.port-content-->
-                                <!--/div><!--/.port-hov-->
-                                <!--img src="{% static 'images/work/2.jpg' %}" alt="team">
-                            </a><!--/.port-ajax-->
-                            <!--div class="spacing30"></div>
-                        </div><!--/.col-md-4-->
                     </div><!--/.portfolio-body-->
                 </div><!--/.row-->
             </div><!--/.container-->
@@ -198,21 +183,12 @@
                                 <div class="row">
                                     <div class="col-md-6 team-keith">
                                         <div class="team-spacing"></div>
-                                        <h3 class="small-title about-name">Keith Probert</h3>
-                                        <p class="team-post">Interim Executive</p>
-                                        <p class="team-post">MBA FCMI</p>
+                                        <h3 class="small-title about-name">Keith Probert&nbsp;&nbsp;<span class="post-name">  MBA FCMI</span></h3>
+                                        <p class="team-post">Senior Interim Executive / Corporate Coach</p>
                                         <hr class="team-line">
                                         <a class="clear" href="https://linkedin.com/in/keithprobert" target="_blank"><img src="{% static 'images/viewmy.png' %}" height="33px" width="160px"></a>
                                         <p>
                                         <a href="mailto:keith@viimi.co.uk" target="_top">keith@viimi.co.uk</a></p>
-
-                                        <ul class="team-social">
-                                            <li><a href="https://web.facebook.com/keith.probert.18?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="" target="_blank" ><i class="fa fa-instagram fa-lg"></i></a></li>
-                                            <li><a href="" target="_blank" ><i class="fa fa-pinterest fa-lg"></i></a></li>
-                                            <li><a href="" target="_blank" ><i class="fa fa-google-plus fa-lg"></i></a></li>
-                                            <li><a href="" target="_blank" ><i class="fa fa-twitter fa-lg"></i></a></li>
-                                        </ul>
                                      </div>
                                      <div class="col-md-6">
                                         <img class="personal-photo" src="{% static 'images/team/keith.jpg' %}" alt="team">
@@ -231,19 +207,11 @@
                                     </div>
                                     <div class="col-md-6 col-xs-12 col-xs-12-push team-izabela">
                                         <div class="team-spacing"></div>
-                                            <h3 class="small-title about-name">Izabela Probert</h3>
-                                            <p class="team-post">Project Manager</p>
-                                            <p class="team-post">ACMA CGMA</p>
+                                            <h3 class="small-title about-name">Izabela Probert&nbsp;&nbsp;<span class="post-name">ACMA</span></h3>
+                                            <p class="team-post">Senior Interim / Project Manager</p>
                                             <hr class="team-line">
                                             <a class="clear" href="https://www.linkedin.com/in/izabela01" target="_blank"><img src="{% static 'images/viewmy.png' %}" height="33px" width="160px"></a>
                                             <p><a href="mailto:izabela@viimi.co.uk" target="_top">izabela@viimi.co.uk</a></p>
-                                            <ul class="team-social">
-                                                <li><a href="https://www.facebook.com/izabelaprobert" target="_blank" ><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="" target="_blank" ><i class="fa fa-instagram"></i></a></li>
-                                                <li><a href="" target="_blank" ><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="" target="_blank" ><i class="fa fa-google-plus"></i></a></li>
-                                                <li><a href="" target="_blank" ><i class="fa fa-twitter"></i></a></li>       
-                                            </ul>
                                         </div>
                                 </div>
                                 <div class="spacing40 clearboth"></div>
@@ -301,9 +269,9 @@
                             <li><a href="https://www.facebook.com/Viimi/" target="_blank"><i class="fa fa-facebook fa-2x pdf"></i></a></li>
                             <li><a href="https://twitter.com/ViimiLtd" target="_blank"><i class="fa fa-twitter fa-2x pdf"></i></a></li>
                             <li><a href="https://www.linkedin.com/company/viimi-ltd" target="_blank"><i class="fa fa-linkedin fa-2x pdf"></i></a></li>
-                            <li><a href="" target="_blank"><i class="fa fa-instagram fa-2x pdf"></i></a></li>
-                            <li><a href="" target="_blank"><i class="fa fa-pinterest fa-2x pdf"></i></a></li>
-                            <li><a href="" target="_blank"><i class="fa fa-google-plus fa-2x pdf"></i></a></li>
+                            <li><a href="https://www.instagram.com/viimiltd/" target="_blank"><i class="fa fa-instagram fa-2x pdf"></i></a></li>
+                            <li><a href="https://uk.pinterest.com/viimiltd/" target="_blank"><i class="fa fa-pinterest fa-2x pdf"></i></a></li>
+                            <li><a href="https://plus.google.com/108131698086668243331" target="_blank"><i class="fa fa-google-plus fa-2x pdf"></i></a></li>
 
                         </ul>
                     </div>
@@ -314,16 +282,14 @@
                 
                 <div class="row">
                     <div class="col-md-6 align-center">
-                        <h3 class="small-title footer-name">Keith Probert</h3>
-                        <p class="team-post" style="color:white;">Interim Executive</p>
-                        <p class="team-post footer-skill">MBA FCMI
-                        <br><a href="mailto:keith@viimi.co.uk" target="_top">keith@viimi.co.uk</a></p>
+                        <h3 class="small-title footer-name">Keith Probert&nbsp;&nbsp;<span class="post-name">  MBA FCMI</span></h3>
+                        <p class="team-post" style="color:white;">Senior Interim Executive / Corporate Coach</p>
+                        <a class="email" href="mailto:keith@viimi.co.uk" target="_top">keith@viimi.co.uk</a></p>
                     </div>
                     <div class="col-md-6 align-center">
-                        <h3 class="small-title footer-name">Izabela Probert</h3>
-                        <p class="team-post" style="color:white;">Project Manager</p>
-                        <p class="team-post footer-skill">ACMA CGMA
-                        <br><a href="mailto:izabela@viimi.co.uk" target="_top">izabela@viimi.co.uk</a></p>
+                        <h3 class="small-title footer-name">Izabela Probert&nbsp;&nbsp;<span class="post-name">ACMA</span></h3>
+                        <p class="team-post" style="color:white;">Senior Interim / Project Manager</p>
+                        <a class="email" href="mailto:izabela@viimi.co.uk" target="_top">izabela@viimi.co.uk</a></p>
 
                     </div>
                 </div>
@@ -331,23 +297,23 @@
                 <hr>
                 </div>
                 <div class="row">
-                    <div class="col-lg-10 col-lg-offset-2 col-md-12 col-sm-12 ">
+                    <div class="col-lg-10 col-lg-offset-2">
                         <ul class="navigation nv-pdf" style="float:none;" >
-                            <li class="documents"><a href="media/pdf/DataProtectionFinal.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-2x pdf"></i> T&C</a></li>
-                            <li class="documents"><a href="media/pdf/PrivacyPolicy.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-2x pdf"></i> Privacy Policy</a></li>
-                            <li class="documents"><a href="media/pdf/TermsandConditionsofBusiness.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-2x pdf"></i> Website Use</a></li>
-                            <li class="documents"><a href="media/pdf/WebsiteUseFinal.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-2x pdf"></i> Data Protection</a></li>
+                            <li class="documents"><a href="media/pdf/PrivacyPolicy.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-1x pdf"></i> Privacy Policy</a></li>
+                            <li class="documents"><a href="media/pdf/DataProtectionFinal.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-1x pdf"></i> T&C</a></li>
+                            <li class="documents"><a href="media/pdf/TermsandConditionsofBusiness.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-1x pdf"></i> Website Use</a></li>
+                            <li class="documents"><a href="media/pdf/WebsiteUseFinal.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-1x pdf"></i> Data Protection</a></li>
                         </ul>
                     </div>
-                        <div class="col-lg-10 col-md-12 col-sm-12 ">
-                        <p style="text-align:center;">Company Registration No in UK: 6499115</p><p style="text-align:center;"   > VAT No: 928 5874 71</p>
-                    </div>
-
                 </div>
             </div>
             <div class="container align-center">
+                <p class="align-center">Company Registation Number in England and Wales <span style="color:#3E848E"> 6499115</span><br>
+                VAT Number <span style="color:#3E848E;">928 5874 71</span></p>
+            </div>
+            <div class="container align-center">
                 <div class="spacing40"></div>
-                    <p>Made with <i class="fa fa-coffee"></i> in Zagreb, Croatia &copy;2016 by<a href="http://kreativnekomunikacije.com/"> KreativneKomunikacije</a></p>
+                    <p>Made with <i class="fa fa-coffee"></i> in Zagreb, Croatia Copyright &copy;<script> document.write(new Date().getFullYear()) </script></p>
             </div><!--/.container-->
         </footer><!--/footer-->
     <!-- Le javascript

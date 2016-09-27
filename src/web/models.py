@@ -1,12 +1,16 @@
 from __future__ import unicode_literals
 from django.core.urlresolvers import reverse
 from django.db import models
+from ckeditor.fields import RichTextField
+from tinymce.models import HTMLField
 
 class Project(models.Model):
     name = models.CharField(max_length=120, blank=False)
     image = models.FileField(null=True,blank=True,upload_to='cover/')
     order = models.CharField(max_length=15,blank=True)
     text = models.CharField(max_length=500,blank=True)
+    featured = models.BooleanField(default = False)
+
  
     class Meta:
     	ordering = ["order"]
@@ -20,7 +24,7 @@ class Project(models.Model):
 class CoverImage(models.Model):
     name = models.CharField(max_length=120, blank=False)
     image = models.FileField(null=True,blank=True,upload_to='cover/')
-    featured = models.NullBooleanField(default = False)
+    featured = models.BooleanField(default = False)
     def __unicode__(self):
         return self.name
 
@@ -45,42 +49,6 @@ class Client(models.Model):
 
     def get_absolute_url(self):
         return reverse("detail", kwargs={"id":self.id})
-
-class KeithAbout(models.Model):
-    keith_about = models.CharField(max_length=700)
-
-    fb = models.BooleanField()
-    fb_url = models.CharField(max_length=100)
-
-    tw = models.BooleanField()
-    tw_url = models.CharField(max_length=100)
-
-    insta = models.BooleanField()
-    insta_url = models.CharField(max_length=100)
-
-    google_plus = models.BooleanField()
-    google_url = models.CharField(max_length=100)
-
-    pinterest = models.BooleanField()
-    pinterest_url = models.CharField(max_length=100)
-
-class IzabelaAbout(models.Model):
-    izabela_about = models.CharField(max_length=700)
-    
-    fb = models.BooleanField()
-    fb_url = models.CharField(max_length=100)
-
-    tw = models.BooleanField()
-    tw_url = models.CharField(max_length=100)
-
-    insta = models.BooleanField()
-    insta_url = models.CharField(max_length=100)
-
-    google_plus = models.BooleanField()
-    google_url = models.CharField(max_length=100)
-
-    pinterest = models.BooleanField()
-    pinterest_url = models.CharField(max_length=100)
 
 class CompanyAbout(models.Model):
     company_about = models.CharField(max_length=700)
