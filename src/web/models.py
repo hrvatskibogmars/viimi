@@ -8,7 +8,7 @@ class Project(models.Model):
     name = models.CharField(max_length=120, blank=False)
     image = models.FileField(null=True,blank=True,upload_to='cover/')
     order = models.CharField(max_length=15,blank=True)
-    text = models.TextField(max_length=500,blank=True)
+    text = HTMLField(max_length=500,blank=True)
     featured = models.BooleanField(default = False)
  
     class Meta:
@@ -85,21 +85,3 @@ class AboutUs(models.Model):
     class Meta:
         verbose_name = 'About Us'
         verbose_name_plural = 'About Us'      
-
-class CompanyAbout(models.Model):
-    company_about = models.CharField(max_length=700)
-    
-    fb = models.BooleanField()
-    fb_url = models.CharField(max_length=100)
-
-    tw = models.BooleanField()
-    tw_url = models.CharField(max_length=100)
-
-    insta = models.BooleanField()
-    insta_url = models.CharField(max_length=100)
-
-    google_plus = models.BooleanField()
-    google_url = models.CharField(max_length=100)
-
-    pinterest = models.BooleanField()
-    pinterest_url = models.CharField(max_length=100)
