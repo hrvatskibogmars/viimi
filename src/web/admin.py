@@ -22,6 +22,13 @@ class CoverImageModelAdmin(admin.ModelAdmin):
 	class Meta:
 		model = CoverImage
 
+class OurServicesModelAdmin(admin.ModelAdmin):
+	list_display = ["__unicode__","name","text","featured"]
+	list_editable = ["text"]
+	
+	class Meta:
+		model = OurServices
+
 
 class ClientImageModelAdmin(admin.ModelAdmin):
 	#list_editable = ["title"]
@@ -37,6 +44,7 @@ class CompanyAboutModelAdmin(admin.ModelAdmin):
 	class Meta:
 		model= CompanyAbout
 
+admin.site.register(OurServices,OurServicesModelAdmin)
 admin.site.register(Project, ProjectModelAdmin)
 admin.site.register(CoverImage,CoverImageModelAdmin)
 admin.site.register(Client,ClientImageModelAdmin)

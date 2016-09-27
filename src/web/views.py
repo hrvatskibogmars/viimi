@@ -18,14 +18,19 @@ def index(request):
 		queryset_projects = None
 	
 
+	try:
+		queryset_ourservices = OurServices.objects.get(featured=True)
+	except ObjectDoesNotExist:
+		queryset_ourservices = None
+	
 	queryset_client = Client.objects.all()
-
 
 
 	context = {
     	"cover": queryset_cover,
     	"client_list": queryset_client,
     	"project_list": queryset_projects,
+    	"ourservice": queryset_ourservices,
 
     }
 	return render(request, "index.html",context)

@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'web',
     'twitter_tag',
+    'tinymce',
+
 ]
 
 MIDDLEWARE = [

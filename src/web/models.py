@@ -1,14 +1,15 @@
 from __future__ import unicode_literals
 from django.core.urlresolvers import reverse
 from django.db import models
+from tinymce.models import HTMLField
+
 
 class Project(models.Model):
     name = models.CharField(max_length=120, blank=False)
     image = models.FileField(null=True,blank=True,upload_to='cover/')
     order = models.CharField(max_length=15,blank=True)
-    text = models.CharField(max_length=500,blank=True)
+    text = HTMLField(max_length=500,blank=True)
     featured = models.BooleanField(default = False)
-
  
     class Meta:
     	ordering = ["order"]
@@ -48,6 +49,14 @@ class Client(models.Model):
 
     def get_absolute_url(self):
         return reverse("detail", kwargs={"id":self.id})
+
+class OurServices(models.Model):
+    text = HTMLField(max_length=10000,blank=True)
+    featured = models.BooleanField(default = False)
+    name  = models.CharField(max_length=100,blank=True)
+    
+    def __unicode__(self):
+        return self.name            
 
 class CompanyAbout(models.Model):
     company_about = models.CharField(max_length=700)
