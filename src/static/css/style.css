@@ -598,6 +598,7 @@ ul, ol {
     font-size: 12px;
     line-height: 1.2;
     margin: 5px 0 0;
+    font-size: 18px;
 }
 .close {
     border: 3px solid;
@@ -1136,6 +1137,9 @@ input:focus, textarea:focus {
     padding-top: 15px;
     padding-left: 1px;
 }
+.cv:hover{
+    content:url('../images/cv-dl.png');
+}
 .footer-name{
     color: #FFF;
 }
@@ -1157,6 +1161,11 @@ input:focus, textarea:focus {
 .team-line{
     border-color: #3E848E;
     height: 5px;
+
+}
+.team-line-project{
+    border-color: #3E848E;
+    height: 0px;
 
 }
 

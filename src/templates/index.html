@@ -105,7 +105,7 @@
                         <h2 class="head-title text-center"><img class="img-responsive" src="{% static 'images/logo3.png' %}" alt="logo" style="display:inline;" width="35px" height="36px"> Our Services</h2>
                         <br>
                         <div class="white-box">
-                        {{ ourservice.text|safe}}
+                        <span class="ourservices-text"> {{ ourservice.text|safe}} </span>
                     </div>
                     </div><!--/.col-md-6-->
                     <div class="col-md-6 text-center">
@@ -138,7 +138,8 @@
                                     <div class="port-hov">
                                         <div class="port-content">
                                             <h3>{{item.name}}</h3>
-                                            <p class="port-client">{{ item.text }}</p>
+                                            <hr class="team-line-project">
+                                            <p class="port-client">{{ item.text}}</p>
                                             
                                         </div><!--/.port-content-->
                                     </div><!--/.port-hov-->
@@ -167,13 +168,15 @@
                                         <div class="team-spacing"></div>
                                         <h3 class="small-title about-name">Keith Probert&nbsp;&nbsp;<span class="post-name">  MBA FCMI</span></h3>
                                         <p class="team-post">Senior Interim Executive / Corporate Coach</p>
+                                        <a href="mailto:keith@viimi.co.uk" target="_top">keith@viimi.co.uk</a></p>
+
                                         <hr class="team-line">
                                         <a class="clear" href="https://linkedin.com/in/keithprobert" target="_blank"><img src="{% static 'images/viewmy.png' %}" height="33px" width="160px"></a>
+                                        <br>
+                                        <br>
                                         <p>
-                                        <a href="mailto:keith@viimi.co.uk" target="_top">keith@viimi.co.uk</a></p>
-                                        <ul class="navigation">
-                                            <li><a href="media/{{aboutus.keith_cv}}" target="_blank"><img src="{% static 'images/cv.png' %}"></a></li>
-                                        </ul>
+                                            <a href="media/{{aboutus.keith_cv}}" target="_blank"><img class="cv" src="{% static 'images/cv.png' %}"></a>
+                                        </p>
 
 
 
@@ -198,13 +201,16 @@
                                         <div class="team-spacing"></div>
                                             <h3 class="small-title about-name">Izabela Probert&nbsp;&nbsp;<span class="post-name">ACMA</span></h3>
                                             <p class="team-post">Senior Interim / Project Manager</p>
-                                            <hr class="team-line">
-                                            <a class="clear" href="https://www.linkedin.com/in/izabela01" target="_blank"><img src="{% static 'images/viewmy.png' %}" height="33px" width="160px"></a>
                                             <p><a href="mailto:izabela@viimi.co.uk" target="_top">izabela@viimi.co.uk</a></p>
-                                            <ul class="navigation" style="float:left;">
-                                            <li><a href="media/{{aboutus.izabela}}" target="_blank"><img src="{% static 'images/cv.png' %}"></a></li>
-                                            </ul>
-                                        </ul>
+
+                                            <hr class="team-line">
+                                            <a class="clear" href="https://www.linkedin.com/in/izabela01" target="_blank"><img src="{% static 'images/viewmy.png' %}"  align="left" height="33px" width="160px"></a>
+                                            <br>
+                                            <br>
+                                            <p>
+                                            <a href="media/{{aboutus.izabela}}" target="_blank"><img class="cv" src="{% static 'images/cv.png' %}" align="left"></a>
+                                            </p>
+                                        
                                         </div>
                                 </div>
                                 <div class="spacing40 clearboth"></div>
