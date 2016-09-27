@@ -22,6 +22,12 @@ def index(request):
 		queryset_ourservices = OurServices.objects.get(featured=True)
 	except ObjectDoesNotExist:
 		queryset_ourservices = None
+
+	try:
+		queryset_aboutus = AboutUs.objects.get(pk=1)
+	except ObjectDoesNotExist:
+		queryset_aboutus = None
+	
 	
 	queryset_client = Client.objects.all()
 
@@ -31,6 +37,7 @@ def index(request):
     	"client_list": queryset_client,
     	"project_list": queryset_projects,
     	"ourservice": queryset_ourservices,
+    	"aboutus":queryset_aboutus,
 
     }
 	return render(request, "index.html",context)
