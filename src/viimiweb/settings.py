@@ -39,9 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'web',
     'twitter_tag',
-    'ckeditor',
-    'tinymce',
-
 ]
 
 MIDDLEWARE = [
