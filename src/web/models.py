@@ -1,8 +1,6 @@
 from __future__ import unicode_literals
 from django.core.urlresolvers import reverse
 from django.db import models
-from ckeditor.fields import RichTextField
-from tinymce.models import HTMLField
 
 class Project(models.Model):
     name = models.CharField(max_length=120, blank=False)
@@ -25,6 +23,7 @@ class CoverImage(models.Model):
     name = models.CharField(max_length=120, blank=False)
     image = models.FileField(null=True,blank=True,upload_to='cover/')
     featured = models.BooleanField(default = False)
+    
     def __unicode__(self):
         return self.name
 
