@@ -164,7 +164,10 @@
 
                             <div class="col-md-6">
                                 <div class="row">
-                                    <div class="col-md-6 team-keith">
+                                   <div class="col-md-6 col-md-push-6">
+                                        <img class="personal-photo-keith center-block" src="media/{{ aboutus.keith_image }}" alt="team" onmouseover="this.src = 'media/{{ aboutus.keith_image_2 }}'" onmouseout="this.src = 'media/{{ aboutus.keith_image }}'">
+                                     </div>
+                                    <div class="col-md-6 team-keith col-md-pull-6">
                                         <div class="team-spacing"></div>
                                         <h3 class="small-title about-name">Keith Probert&nbsp;<span class="post-name">  MBA FCMI</span></h3>
                                         <p class="team-post">Senior Interim / Corporate Coach</p>
@@ -174,9 +177,7 @@
                                             <br><a href="media/{{aboutus.keith_cv}}" target="_blank"><img class="cv" src="{% static 'images/cv.png' %}"></a>
                                         
                                      </div>
-                                     <div class="col-md-6">
-                                        <img class="personal-photo-keith center-block" src="media/{{ aboutus.keith_image }}" alt="team" onmouseover="this.src = 'media/{{ aboutus.keith_image_2 }}'" onmouseout="this.src = 'media/{{ aboutus.keith_image }}'">
-                                     </div>
+                                  
                                 </div>
                                         <div class="spacing40 clearboth"></div>
                                         <span class="mr">
@@ -187,10 +188,10 @@
                             
                             <div class="col-md-6">
                                 <div class="row">
-                                    <div class="col-md-6 col-xs-12 col-xs-12-push">
+                                   <div class="col-md-6 col-xs-12">
                                         <img class="personal-photo-izabela center-block" src="media/{{ aboutus.izabela_image }}" alt="team" onmouseover="this.src= 'media/{{ aboutus.izabela_image_2 }}'" onmouseout="this.src = 'media/{{ aboutus.izabela_image }}'">
                                     </div>
-                                    <div class="col-md-6 col-xs-12 col-xs-12-push team-izabela">
+                                    <div class="col-md-6 col-xs-12 team-izabela">
                                         <div class="team-spacing"></div>
                                             <h3 class="small-title about-name">Izabela Probert&nbsp;<span class="post-name">ACMA CGMA</span></h3>
                                             <p class="team-post">Senior Interim / Project Manager</p>
@@ -199,8 +200,8 @@
                                             <a class="clear" href="https://www.linkedin.com/in/izabela01" target="_blank" style="display:block;"><img src="{% static 'images/viewmy.png' %}" height="33px" width="160px"></a>
                                             <br>
                                             <a href="media/{{aboutus.izabela}}" target="_blank"><img class="cv" src="{% static 'images/cv.png' %}"></a>
-                                            
                                         </div>
+                                       
                                 </div>
                                 <div class="spacing40 clearboth"></div>
                                 <span class="mrs">{{ aboutus.izabela_text | safe}}</span>
@@ -282,8 +283,8 @@
                 <div class="row">
                     <div class="col-lg-12 align-center">
                         <ul class="navigation nv-pdf" style="float:none;" >
-                            <li class="documents" style="float:none;"><a href="media/pdf/PrivacyPolicy.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-1x pdf"></i> Privacy Policy</a></li>
-                            <li class="documents" style="float:none;" ><a href="media/pdf/TermsandConditionsofBusiness.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-1x pdf"></i> Terms & Conditions</a></li>
+                            <li class="documents" style="float:none;"><a href="media/pdf/PrivacyPolicy.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-2x pdf"></i> Privacy Policy</a></li>
+                            <li class="documents" style="float:none;" ><a href="media/pdf/TermsandConditionsofBusiness.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-2x pdf"></i> Terms & Conditions</a></li>
                             <!--li class="documents"><a href="media/pdf/TermsandConditionsofBusiness.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-1x pdf"></i> Website Use</a></li>
                             <li class="documents"><a href="media/pdf/WebsiteUseFinal.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-1x pdf"></i> Data Protection</a></li-->
                         </ul>

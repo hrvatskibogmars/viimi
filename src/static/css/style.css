@@ -29,6 +29,16 @@ Viimi Custom CSS
 ------------------------------------------------------------*/
 
 /*-----------------------------------------GENERAL SECTION--------------------------------------------------*/
+@font-face {
+    font-family: GillSansBold;
+    src: url(../fonts/GILLSansBold.TTF);
+
+    font-family: GillSansLight;
+    src: url(../fonts/GILLSansLight.TTF);
+
+    font-family: GillSansRegular;
+    src: url(../fonts/GILLSansRegular.TTF);
+}
 
 body, html {
 	height: 100%;
@@ -63,7 +73,6 @@ a:focus {
 }
 h1, h2, h3, h4, h5, h6 {
 	font-weight: bold;
-	font-family: 'Cinzel', serif;
 	color: #000;
 }
 iframe {
@@ -422,6 +431,7 @@ ul, ol {
     letter-spacing: 2px;
     margin: 0px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 .team-spacing{height:76px;width:100%;}
 #team .owl-pagination {
@@ -1249,6 +1259,7 @@ input:focus, textarea:focus {
 .post-name{
     font-size: 10px;
     letter-spacing: 0px;
+    font-family: GillsansRegular;
 }
 #header-id{
     width: 85%
@@ -1267,7 +1278,9 @@ input:focus, textarea:focus {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.ourservices-text p{
+    font-family: GillSansRegular;
+}
 /*-----------------------------media queries-----------------------------------*/
 
 @media(max-width: 2560px){
@@ -1300,6 +1313,19 @@ input:focus, textarea:focus {
      .team-spacing{
         height: 15px;
     }
+}
+
+@media(min-width: 769px) and (max-width: 1024px){
+    .team-keith{
+        text-align: center;
+    }
+    .team-keith .cv{
+        padding-bottom: 10px;
+    }
+    .team-izabela{
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 768px){
