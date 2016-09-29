@@ -13,8 +13,8 @@ class Project(models.Model):
  
     class Meta:
     	ordering = ["order"]
-        verbose_name = 'Sample Project'
-        verbose_name_plural = 'Sample Projects'
+        verbose_name = '3. Projects'
+        verbose_name_plural = '3. Projects'
 
     def __unicode__(self):
         return self.name
@@ -28,8 +28,8 @@ class CoverImage(models.Model):
     featured = models.BooleanField(default = False)
     
     class Meta:
-        verbose_name = 'Home Cover Image'
-        verbose_name_plural = 'Home Cover Images'
+        verbose_name = '1. Home'
+        verbose_name_plural = '1. Home'
     
     def __unicode__(self):
         return self.name
@@ -49,8 +49,8 @@ class Client(models.Model):
 
     class Meta:
         ordering = ["order"]
-        verbose_name = 'Client'
-        verbose_name_plural = 'Clients'
+        verbose_name = '5. Client'
+        verbose_name_plural = '5. Clients'
 
     def __unicode__(self):
         return self.name
@@ -64,8 +64,8 @@ class OurServices(models.Model):
     name  = models.CharField(max_length=100,blank=True)
     
     class Meta:
-        verbose_name = 'Our Service'
-        verbose_name_plural = 'Our Services'
+        verbose_name = '2. Services'
+        verbose_name_plural = '2. Services'
     
     def __unicode__(self):
         return self.name            
@@ -74,14 +74,16 @@ class AboutUs(models.Model):
     keith_text = HTMLField(max_length=10000,blank=True)
     keith_cv =models.FileField(null=True,blank=True,upload_to='cv/')
     keith_image = models.FileField(null=True,blank=True,upload_to='about/')
+    keith_image_2 = models.FileField(null=True,blank=True,upload_to='about/')
 
     izabela_text = HTMLField(max_length=10000, blank=True)
     izabela_cv =models.FileField(null=True,blank=True,upload_to='cv/')
     izabela_image = models.FileField(null=True,blank=True,upload_to='about/')
+    izabela_image_2 = models.FileField(null=True,blank=True,upload_to='about/')
 
 
     def __unicode__(self):
         return "About us"    
     class Meta:
-        verbose_name = 'About Us'
-        verbose_name_plural = 'About Us'      
+        verbose_name = '4. About Us'
+        verbose_name_plural = '4. About Us'      

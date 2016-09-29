@@ -182,33 +182,4 @@
 			$('body').addClass('no-para');
 			
 	}
-	
-    //google map load after all page finish
-    $(window).bind("load", function () {
-        $('#map_canvas').gmap({
-            'center': '45.812778, 15.977647',
-            'zoom': 15,
-            scrollwheel: false,
-            'disableDefaultUI': false,
-            'styles': [{
-                stylers: [{
-                    lightness: 7
-                }, {
-                    saturation: -100
-                }]
-            }],
-            'callback': function () {
-                var self = this;
-                self.addMarker({
-                    'position': this.get('map').getCenter(),
-                    icon: 'static/images/office-building.png',
-                }).click(function () {
-                    self.openInfoWindow({
-                        'content': $('.map-content').html()
-                    }, this);
-                });
-            }
-        });
-    }).load();
-
 })(jQuery);
