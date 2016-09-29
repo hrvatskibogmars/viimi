@@ -1281,6 +1281,12 @@ input:focus, textarea:focus {
 .ourservices-text p{
     font-family: GillSansRegular;
 }
+
+.shrink .menu-btn {
+    color: #3E848E;
+}
+
+
 /*-----------------------------media queries-----------------------------------*/
 
 @media(max-width: 2560px){
@@ -1360,7 +1366,8 @@ input:focus, textarea:focus {
 
 @media (max-width: 425px){
     .overlay{
-        background-image: none;
+        /*background-image: none;*/
+        background-image: url('../images/overlay/overlaymobile.png');
     }
     .logo{
         padding-left: 0px;
