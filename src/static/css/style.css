@@ -29,6 +29,7 @@ Viimi Custom CSS
 ------------------------------------------------------------*/
 
 /*-----------------------------------------GENERAL SECTION--------------------------------------------------*/
+
 body, html {
 	height: 100%;
 }
@@ -351,7 +352,7 @@ ul, ol {
 	font-size: 35px;
 	letter-spacing: 4px;
 	margin: 0 0 10px;
-    color: #FFF;
+    color: #000;
 	position: relative;
 }
 .head-title{
@@ -577,6 +578,8 @@ ul, ol {
     border-color: #3E848E;
     border-style: solid;
     border-width: 1px;
+        background-color: #FFF;
+
 }
 .port-hov {
     height: 100%;
@@ -1155,9 +1158,9 @@ input:focus, textarea:focus {
 }
 .change-logo{
     content:url('../images/viimi-logo2.png');
-    padding-top: 13px;
+    padding-top: 10px;
     height: 74px;
-    padding-left: 1px;
+    padding-left: 0px;
 }
 .cv:hover{
     content:url('../images/cv-dl.png');
@@ -1241,24 +1244,21 @@ input:focus, textarea:focus {
     text-transform: lowercase;
 }
 .white-box{
-    color: #FFF;
-    border-radius: 8px;
-    padding: 10px 20px 10px 20px;
-
+    color: #000;
 }
 .post-name{
     font-size: 10px;
     letter-spacing: 0px;
 }
 #header-id{
-    width: 90%
+    width: 85%
 }
 
 .clients{
     padding-bottom: 0px;
 }
 
-#works, #services{
+#works, #services, #team{
     padding-top: 70px;
 }
 .overlay{
@@ -1273,6 +1273,13 @@ input:focus, textarea:focus {
 @media(max-width: 2560px){
     .logo{padding-left:280px}
     .change-logo{padding-left: 150px;}
+}
+
+
+@media(min-width: 1440px)and  (max-width: 2560px){
+    .logo{
+        padding-left: 0px;
+    }
 }
 @media (max-width: 1440px){
     .logo{
@@ -1300,6 +1307,9 @@ input:focus, textarea:focus {
         padding-left: 50px;
     }
     .change-logo{
+        padding-top: 20px;
+        padding-left: 0px;
+        height: 65px;
     }
     .shrink .menu-btn{
         color: #3E848E;
@@ -1321,9 +1331,16 @@ input:focus, textarea:focus {
     }
 
 }
+
 @media (max-width: 425px){
     .overlay{
         background-image: none;
+    }
+    .logo{
+        padding-left: 0px;
+    }
+    .port-item{
+        width: 100%;
     }
      
 }

@@ -22,7 +22,7 @@
 	
     //change logo on scroll
     $(window).scroll(function() {
-    if ($(document).scrollTop() > 30) {
+    if ($(document).scrollTop() > 1) {
         $('.logo').addClass('change-logo');
         $('.logo').addClass('vcenter');
 
