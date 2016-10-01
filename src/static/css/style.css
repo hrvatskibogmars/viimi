@@ -188,7 +188,7 @@ ul, ol {
 	font-weight: bold;
 	padding: 30px 7px;
 	letter-spacing: 2px;
-	text-transform: uppercase;
+    font-family: GillsansRegular;
 }
 
 .nv-social li a {
