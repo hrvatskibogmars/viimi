@@ -59,14 +59,14 @@ class Client(models.Model):
         return reverse("detail", kwargs={"id":self.id})
 
 class OurServices(models.Model):
-    text = HTMLField(max_length=10000,blank=True)
+    text = HTMLField()
     featured = models.BooleanField(default = False)
     name  = models.CharField(max_length=100,blank=True)
     
     class Meta:
         verbose_name = '2. Services'
         verbose_name_plural = '2. Services'
-    
+
     def __unicode__(self):
         return self.name            
 

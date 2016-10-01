@@ -151,3 +151,15 @@ CKEDITOR_CONFIGS = {
         'toolbar': 'Basic',
     },
 }
+TINYMCE_DEFAULT = {
+'theme': 'modern',
+'plugins': 'noneditable advlist autolink link lists charmap hr searchreplace wordcount visualblocks visualchars code insertdatetime save table contextmenu directionality paste textcolor',
+'toolbar': 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | forecolor backcolor | upload_button',
+'noneditable_leave_contenteditable': 'true',
+'setup': 'addCustomButtons',
+'content_css': os.path.join(STATIC_URL, "/static/css/style.css"),
+'relative_urls': False,
+'remove_script_host': True,
+'document_base_url': 'viimiweb',
+'removed_menuitems': 'newdocument',
+}

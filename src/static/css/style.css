@@ -363,6 +363,8 @@ ul, ol {
 	margin: 0 0 10px;
     color: #000;
 	position: relative;
+    font-family: GillsansBold;
+
 }
 .head-title{
     font-size: 35px;
@@ -370,6 +372,8 @@ ul, ol {
     margin: 0 0 10px;
     color: #000;
     position: relative;
+    font-family: GillsansBold;
+
 
 }
 .black-bg .head-title, .black-bg p {
@@ -1278,9 +1282,15 @@ input:focus, textarea:focus {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.ourservices-text p{
+.ourservices-text p,ul{
     font-family: GillSansRegular;
 }
+
+.mr,.mrs{
+    font-family: GillSansRegular;
+}
+
+
 
 .shrink .menu-btn {
     color: #3E848E;
