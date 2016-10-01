@@ -94,7 +94,10 @@
         });
     });
 
+    $('.port-hov').trigger('mouseover');
 
+    $(".port-hov").on('mouseenter', function(){
+    })
 
     // Video responsive
     $("body").fitVids();
