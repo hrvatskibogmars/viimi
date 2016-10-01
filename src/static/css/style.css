@@ -1306,6 +1306,10 @@ input:focus, textarea:focus {
     color: #3E848E;
 }
 
+.shrink .navigation{
+    padding-right: 20px;
+}
+
 
 /*-----------------------------media queries-----------------------------------*/
 
@@ -1317,12 +1321,15 @@ input:focus, textarea:focus {
 
 @media(min-width: 1440px)and  (max-width: 2560px){
     .logo{
-        padding-left: 0px;
+        /*padding-left: 0px;*/
+        padding-left: 40%;
     }
 }
 @media (max-width: 1440px){
     .logo{
-        padding-left: 140px;
+        /*padding-left: 100px;*/
+        padding-left: 40%;
+
     }
      .change-logo{
         padding-left: 0px;
@@ -1331,7 +1338,8 @@ input:focus, textarea:focus {
 
 @media (max-width: 1024px){
     .logo{
-        padding-left: 85px;
+        /*padding-left: 65px;*/
+        padding-left: 40%;
     }
       .change-logo{
         padding-left: 0px;
@@ -1356,7 +1364,8 @@ input:focus, textarea:focus {
 
 @media (max-width: 768px){
     .logo{
-        padding-left: 50px;
+        /*padding-left: 50px;*/
+        padding-left: 10%;
     }
     .change-logo{
         padding-top: 20px;
@@ -1383,7 +1392,12 @@ input:focus, textarea:focus {
     }
 
 }
-
+@media (min-width: 425px) and (max-width: 700px){
+ .overlay{
+        /*background-image: none;*/
+        /*background-image: url('../images/overlay/overlay.png');*/
+    }
+}
 @media (max-width: 425px){
     .overlay{
         /*background-image: none;*/
