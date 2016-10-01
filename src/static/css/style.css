@@ -189,7 +189,7 @@ ul, ol {
 	font-size: 14px;
 	font-weight: bold;
 	padding: 30px 7px;
-	letter-spacing: 2px;
+	/*letter-spacing: 2px;*/
     font-family: Gill Sans Regular;
 }
 
@@ -1314,8 +1314,8 @@ input:focus, textarea:focus {
 /*-----------------------------media queries-----------------------------------*/
 
 @media(max-width: 2560px){
-    .logo{padding-left:280px}
-    .change-logo{padding-left: 150px;}
+    .logo{padding-left:280px;}
+    .change-logo{padding-left: 20%;}
 }
 
 
@@ -1324,6 +1324,8 @@ input:focus, textarea:focus {
         /*padding-left: 0px;*/
         padding-left: 40%;
     }
+        .change-logo{padding-left: 20%;}
+
 }
 @media (max-width: 1440px){
     .logo{
@@ -1339,7 +1341,7 @@ input:focus, textarea:focus {
 @media (max-width: 1024px){
     .logo{
         /*padding-left: 65px;*/
-        padding-left: 40%;
+        padding-left: 32%;
     }
       .change-logo{
         padding-left: 0px;
@@ -1395,7 +1397,7 @@ input:focus, textarea:focus {
 @media (min-width: 425px) and (max-width: 700px){
  .overlay{
         /*background-image: none;*/
-        /*background-image: url('../images/overlay/overlay.png');*/
+        background-image: url('../images/overlay/overlay700.png');
     }
 }
 @media (max-width: 425px){

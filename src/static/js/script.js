@@ -139,6 +139,13 @@
             }
             return false;
         });
+
+    });
+    
+    $(document).ready(function () {
+        $('.logo').removeClass('change-logo');
+        $('.logo').addClass('vcenter');
+
     });
     //portfolio scrolling
     $(function () {
