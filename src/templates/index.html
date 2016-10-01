@@ -9,10 +9,10 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <!-- Le facebook tags -->
-        <meta property="og:title" content="Viimi">
+        <meta property="og:title" content="Viimi - You & Us">
         <meta property="og:description" content="Delivering Your Strategy together">
-        <meta property="og:image" content="http://46.101.103.115/static/images/logo3.png">
-        <meta property="og:url" content="http://46.101.103.115/index.html">
+        <meta property="og:image" content="http://46.101.103.115/static/images/logo-fb.png">
+        <meta property="og:url" content="http://www.viimi.co.uk/">
     
         <!-- Le styles -->
         <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
@@ -135,7 +135,7 @@
                         {% for item in project_list %}
                             <div class="col-md-4 col-sm-6 port-item design photography  align-center">
                                 <a class="port-ajax" href="#" data-link="work1.html">
-                                    <div class="port-hov">
+                                    <div class="port-hov" id="project-hover">
                                         <div class="port-content">
                                             <h3>{{item.name}}</h3>
                                             <hr class="team-line-project">

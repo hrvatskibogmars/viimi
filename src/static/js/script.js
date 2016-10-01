@@ -139,7 +139,6 @@
             }
             return false;
         });
-
     });
     //portfolio scrolling
     $(function () {
