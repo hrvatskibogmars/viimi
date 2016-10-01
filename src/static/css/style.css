@@ -30,14 +30,16 @@ Viimi Custom CSS
 
 /*-----------------------------------------GENERAL SECTION--------------------------------------------------*/
 @font-face {
-    font-family: GillSansBold;
-    src: url(../fonts/GILLSansBold.TTF);
-
-    font-family: GillSansLight;
-    src: url(../fonts/GILLSansLight.TTF);
-
-    font-family: GillSansRegular;
-    src: url(../fonts/GILLSansRegular.TTF);
+    font-family: Gill Sans Bold;
+    src: url(../fonts/Gill-Sans-Bold.ttf);
+}
+@font-face {
+    font-family: Gill Sans Light;
+    src: url(../fonts/Gill-Sans-Light.ttf);
+}
+@font-face {
+    font-family: Gill Sans Regular;
+    src: url(../fonts/Gill-Sans-Regular.ttf);
 }
 
 body, html {
@@ -48,14 +50,14 @@ body {
 	font-size: 14px;
 	line-height: 1.7;
 	background-color: #fff;
-    font-family: GillsansRegular;
+    font-family: Gill Sans Regular;
 }
 [class^="icon-"]:before, [class*=" icon-"]:before {
 	cursor: inherit;
 }
 a {
 	color: #999;
-    font-family: GillsansRegular;
+    font-family: Gill Sans Light;
 	text-decoration: none;
 	transition: ease .3s;
 	-webkit-transition: ease .3s;
@@ -188,7 +190,7 @@ ul, ol {
 	font-weight: bold;
 	padding: 30px 7px;
 	letter-spacing: 2px;
-    font-family: GillsansRegular;
+    font-family: Gill Sans Regular;
 }
 
 .nv-social li a {
@@ -364,16 +366,15 @@ ul, ol {
 	margin: 0 0 10px;
     color: #000;
 	position: relative;
-    font-family: GillsansRegular;
+    font-family: Gill Sans Regular;
 
 }
 .head-title{
     font-size: 35px;
-    letter-spacing: 4px;
     margin: 0 0 10px;
     color: #000;
     position: relative;
-    font-family: GillsansRegular;
+    font-family: Gill Sans Bold;
 
 
 }
@@ -387,7 +388,7 @@ ul, ol {
 	font-size: 20px;
 	letter-spacing: 1px;
 	margin: 0 0 10px;
-    font-family: GillsansRegular;
+    font-family: Gill Sans Bold;
 
 }
 .sub-title {
@@ -439,7 +440,7 @@ ul, ol {
     margin: 0px;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: GillsansRegular;
+    font-family: Gill Sans Regular;
 
 }
 .team-spacing{height:76px;width:100%;}
@@ -631,6 +632,8 @@ ul, ol {
     font-size: 10px;
     margin: 0;
     text-align: justify;
+    font-family: Gill Sans Regular;
+
 }
 .port-content > h3 {
     color: #000;
@@ -638,7 +641,9 @@ ul, ol {
     line-height: 1.2;
     margin: 5px 0 0;
     font-size: 18px;
+    font-family: Gill Sans Bold;
 }
+
 .close {
     border: 3px solid;
     border-radius: 100px;
@@ -1268,7 +1273,7 @@ input:focus, textarea:focus {
 .post-name{
     font-size: 10px;
     letter-spacing: 0px;
-    font-family: GillsansRegular;
+    font-family: Gill Sans Regular;
 }
 #header-id{
     width: 85%
@@ -1288,11 +1293,11 @@ input:focus, textarea:focus {
     background-size: cover;
 }
 .ourservices-text p,ul{
-    font-family: GillSansRegular;
+    font-family: Gill Sans Regular;
 }
 
 .mr,.mrs{
-    font-family: GillSansRegular;
+    font-family: Gill Sans Regular;
 }
 
 
