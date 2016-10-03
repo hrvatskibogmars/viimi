@@ -206,13 +206,13 @@
         $(".port-filter a").removeClass("active");
         $(this).addClass("active");
     });
-	
+	/*
 	//background ticker
     $('.big-ticker:has(>div:eq(1))').list_ticker({
         speed: 5000,
         effect: 'fade'
     });
-	
+*/
 	//add class on touch device
 	if (Modernizr.touch) {
 			$('body').addClass('no-para');

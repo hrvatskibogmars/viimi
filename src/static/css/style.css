@@ -224,7 +224,11 @@ ul, ol {
 
 .shrink .navigation li a {
     color:#3E848E;
-
+}
+.shrink-anim .for-sticky {
+    background: none repeat scroll 0 0 #FFF;
+    padding: 5px 0;
+    -webkit-backface-visibility:hidden;
 }
 
 .box-mobile {
@@ -363,7 +367,7 @@ ul, ol {
 	margin: 0 0 10px;
     color: #000;
 	position: relative;
-    font-family: Gill Sans Regular;
+    font-family: Gill Sans Bold;
 
 }
 .head-title{
@@ -440,7 +444,7 @@ ul, ol {
     font-family: Gill Sans Regular;
 
 }
-.team-spacing{height:76px;width:100%;}
+.team-spacing{height:70px;width:100%;}
 #team .owl-pagination {
     height: 80px;
     margin-top: -80px;
@@ -595,7 +599,7 @@ ul, ol {
     border-color: #3E848E;
     border-style: solid;
     border-width: 1px;
-        background-color: #FFF;
+    background-color: #FFF;
 
 }
 .port-hov {
@@ -1159,9 +1163,15 @@ input:focus, textarea:focus {
 .pagination > li > a, .pagination > li > span{color:inherit;}
 
 
-#works,#services, #works-detail,#team,#clients, #clients-detail, #footer, .shrink{
+#works,#services, #works-detail,#team,#clients, #clients-detail, #footer{
     border-left-width: 50px;
     border-left-color: #3E848E;
+    border-left-style: solid;
+}
+
+.shrink{
+    border-left-width: 50px;
+    border-left-color: transparent;
     border-left-style: solid;
 }
 
@@ -1199,13 +1209,16 @@ input:focus, textarea:focus {
 }
 .twitter-timeline-rendered { 
     width: 70% !important;
-    height: 600px !important;
-
 }
+/*
+#twitter-widget-0{
+    height: 100% !important;
+}
+
 .twitter-timeline{
     height: 100%;
 }
-
+*/
 .team-line{
     border-color: #3E848E;
     height: 5px;
@@ -1284,7 +1297,8 @@ input:focus, textarea:focus {
     padding-top: 70px;
 }
 .overlay{
-    background-image: url("../images/overlay5.png");
+    /*background-image: url("../images/overlay5.png");*/
+    background-image: url("../images/1300x800overlay.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1338,7 +1352,7 @@ input:focus, textarea:focus {
 @media (max-width: 1024px){
     .logo{
         /*padding-left: 65px;*/
-        padding-left: 32%;
+        padding-left: 15%;
     }
       .change-logo{
         padding-left: 0px;
@@ -1365,11 +1379,12 @@ input:focus, textarea:focus {
     .logo{
         /*padding-left: 50px;*/
         padding-left: 10%;
+        width: auto;
     }
     .change-logo{
         padding-top: 20px;
         padding-left: 0px;
-        height: 65px;
+        width: auto;
     }
     .shrink .menu-btn{
         color: #3E848E;
@@ -1391,19 +1406,23 @@ input:focus, textarea:focus {
     }
 
 }
-@media (min-width: 425px) and (max-width: 700px){
+
+@media (min-width: 460px) and (max-width: 700px){
  .overlay{
-        /*background-image: none;*/
-        background-image: url('../images/overlay/overlay700.png');
+        background-image: none;
+        background-image: url('../images/overlay/overlay640x480.png');
+        min-height: 80%;
     }
+
 }
-@media (max-width: 425px){
+@media (max-width: 460px){
     .overlay{
         /*background-image: none;*/
-        background-image: url('../images/overlay/overlaymobile.png');
+        background-image: url('../images/overlay/overlaymobile.png');*/
     }
     .logo{
-        padding-left: 0px;
+        padding-top: 24px;
+        width: auto;
     }
     .port-item{
         width: 100%;
@@ -1411,7 +1430,7 @@ input:focus, textarea:focus {
      .change-logo{
         padding-top: 20px;
         padding-left: 0px;
-        height: 59px;
+        width: auto;
     }
      
 }
