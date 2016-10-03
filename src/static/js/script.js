@@ -34,6 +34,9 @@
     }
     });
 
+
+
+
 	//create menu for tablet/mobile
 	$(".menu-box .navigation").clone(false).find("ul,li").removeAttr("id").remove(".sub-menu").appendTo($(".mobile-menu"));
 	$(".mobile-menu .sub-menu").remove();
@@ -94,15 +97,20 @@
         });
     });
 
-    $('.port-hov').trigger('mouseover');
-
-    $(".port-hov").on('mouseenter', function(){
-    })
 
     // Video responsive
     $("body").fitVids();
 
+    $(".port-hov").hover(function() {
+            console.log("bok");
+            $(this).css('opacity', 1);
+            },
+            function() {
+                $(this).css('opacity', 0);
+            console.log("ajd bok");
 
+           }
+        );    
 
     //replace the data-background into background image
     $(".img-bg").each(function () {
@@ -140,13 +148,32 @@
             return false;
         });
 
-    });
-    
-    $(document).ready(function () {
-        $('.logo').removeClass('change-logo');
-        $('.logo').addClass('vcenter');
+        setTimeout(function(){
+            if ($(document).scrollTop() < 1) {
+                $('.logo').addClass('change-logo');
+                $('.logo').addClass('vcenter');
+                $('.sticky-wrapper').addClass('shrink');
+            }
+        }, 3000);
 
+        var duration = 1000;
+        $('.port-hov').each(function(index,item) {
+            //console.log(item)
+            setTimeout(function(){
+                $(item).mouseenter();},duration);
+            
+            duration = duration + 3000;
+    
+            setTimeout(function(){
+                    $(item).mouseleave();
+                },duration);
+            //$('.port-hov').mou();
+        //$('.port-content').mouseover();
+        //$('.port-ajax').mouseover();
+        });
     });
+
+
     //portfolio scrolling
     $(function () {
         $('.port-ajax').bind('click', function (event) {

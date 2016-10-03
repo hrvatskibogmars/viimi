@@ -273,9 +273,6 @@ ul, ol {
 	color:#FFF;
 }
 /*-------------------SLIDER SECTION----------------------------------*/
-.overlay {
-    opacity: 0.5;
-}
 .img-bg {
 	background-position: center center;
     background-repeat: no-repeat;
@@ -1162,7 +1159,7 @@ input:focus, textarea:focus {
 .pagination > li > a, .pagination > li > span{color:inherit;}
 
 
-#works, #works-detail,#team,#clients, #clients-detail, #footer, .shrink{
+#works,#services, #works-detail,#team,#clients, #clients-detail, #footer, .shrink{
     border-left-width: 50px;
     border-left-color: #3E848E;
     border-left-style: solid;
@@ -1387,7 +1384,7 @@ input:focus, textarea:focus {
         text-align: center;
     }
 
-    #works, #works-detail,#team,#clients, #clients-detail, #footer, .shrink{
+    #works, #services, #works-detail,#team,#clients, #clients-detail, #footer, .shrink{
     border-left-width: 10px;
     border-left-color: #3E848E;
     border-left-style: solid;
