@@ -190,8 +190,7 @@
             });
         }
         loopProjects();
-        
-        setInterval(loopProjects, 20000);
+        setInterval(loopProjects, 30000);
     });
 
 
