@@ -279,7 +279,7 @@ ul, ol {
 /*-------------------SLIDER SECTION----------------------------------*/
 .img-bg {
 
-    background-image: url("../images/1300x800foto.png");
+    /*background-image: url("../images/1300x800foto.png");*/
 	background-position: center center;
     background-repeat: no-repeat;
 	background-size: cover;

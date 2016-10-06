@@ -75,11 +75,16 @@ class AboutUs(models.Model):
     keith_cv =models.FileField(null=True,blank=True,upload_to='cv/')
     keith_image = models.FileField(null=True,blank=True,upload_to='about/')
     keith_image_2 = models.FileField(null=True,blank=True,upload_to='about/')
+    keith_name_title = models.CharField(max_length=100,blank=True)
+    keith_position = models.CharField(max_length=100,blank=True)
 
     izabela_text = HTMLField(max_length=10000, blank=True)
     izabela_cv =models.FileField(null=True,blank=True,upload_to='cv/')
     izabela_image = models.FileField(null=True,blank=True,upload_to='about/')
     izabela_image_2 = models.FileField(null=True,blank=True,upload_to='about/')
+    izabela_name_title = models.CharField(max_length=100,blank=True)
+    izabela_position = models.CharField(max_length=100,blank=True)
+
 
 
     def __unicode__(self):
