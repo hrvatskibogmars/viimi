@@ -21,11 +21,11 @@
     
 	
     //change logo on scroll
+    
     $(window).scroll(function() {
     if ($(document).scrollTop() > 1) {
         $('.logo').addClass('change-logo');
         $('.logo').addClass('vcenter');
-
     }
     else {
         $('.logo').removeClass('change-logo');
@@ -33,7 +33,7 @@
 
     }
     });
-
+    
 
 
 
@@ -113,13 +113,14 @@
         );    
 
     //replace the data-background into background image
+    /*
     $(".img-bg").each(function () {
         var imG = $(this).data('background');
         $(this).css('background-image', "url('" + imG + "') "
 
         );
     });
-
+    */
 
     //move to hash after loading
     $(window).bind("load", function () {
@@ -148,43 +149,51 @@
             return false;
         });
 
-        setTimeout(function(){
-            if ($(document).scrollTop() < 1) {
-                $('.logo').addClass('change-logo');
-                $('.logo').addClass('vcenter');
-                $('.sticky-wrapper').addClass('shrink');
-            }
-        }, 3000);
+        if ($(document).scrollTop() > 1) {
+                    $('.logo').addClass('change-logo');
+                    $('.logo').addClass('vcenter');
+                    $('.sticky-wrapper').addClass('shrink');
+        }
 
-        var duration = 1000;
-        $('.port-hov').each(function(index,item) {
-            //console.log(item)
+        function popNavBar(){
             setTimeout(function(){
-                $(item).mouseenter();},duration);
-            
-            duration = duration + 3000;
-    
+                if ($(document).scrollTop() < 1) {
+                    $('.logo').addClass('change-logo');
+                    $('.logo').addClass('vcenter');
+                    $('.sticky-wrapper').addClass('shrink');
+                }
+            },3000)
             setTimeout(function(){
-                    $(item).mouseleave();
-                },duration);
-            //$('.port-hov').mou();
-        //$('.port-content').mouseover();
-        //$('.port-ajax').mouseover();
-        });
+                if ($(document).scrollTop() < 1) {
+                        $('.logo').removeClass('change-logo');
+                        $('.logo').removeClass('vcenter');
+                        $('.sticky-wrapper').removeClass('shrink');
+                }
+            },6000)
+
+        }
+        popNavBar();
+        setInterval(popNavBar, 3000);
+
+        function loopProjects() {
+            var duration = 3000; 
+            $('.port-hov').each(function(index,item) {
+                //console.log(item)
+                setTimeout(function(){
+                    $(item).mouseenter();},duration);
+                
+                duration = duration + 3000;
+        
+                setTimeout(function(){
+                        $(item).mouseleave();
+                    },duration);
+            });
+        }
+        loopProjects();
+        
+        setInterval(loopProjects, 20000);
     });
 
-
-    //portfolio scrolling
-    $(function () {
-        $('.port-ajax').bind('click', function (event) {
-            var $anchor = $('#work-ajax');
-
-            $('html, body').stop().animate({
-                scrollTop: $($anchor).offset().top - 93
-            }, 1000, 'linear');
-            event.preventDefault();
-        });
-    });
 
     //isotope setting(portfolio)
     var $container = $('.portfolio-body');
