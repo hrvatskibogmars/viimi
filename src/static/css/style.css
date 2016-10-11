@@ -1325,7 +1325,14 @@ input:focus, textarea:focus {
 .shrink .navigation{
     padding-right: 0px;
 }
-
+.liner-trans {
+    background: none repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 50px;
+    margin: 20px 0;
+    width: 1px;
+    opacity: 0.6;
+}
 
 /*-----------------------------media queries-----------------------------------*/
 @media only screen and (min-width : 320px) {
@@ -1339,11 +1346,13 @@ input:focus, textarea:focus {
         border-left-width: 10px;
         border-left-color: transparent;
     }
-
     .overlay{
-        background-image: url('../images/overlay/overlaymobile.png');*/
+        background-size: 100% 100%;
+        background-image: url('../images/overlay/overlaymobile.png');
     }
-
+    .cover-img{
+        background-size: 100% 100%;
+    }
     .team-keith, .team-izabela{
         text-align: center;
     }
@@ -1361,14 +1370,29 @@ input:focus, textarea:focus {
         padding-left: 0px;
         height: auto;
     }
-
+    .overlay{
+        background-size: 100% 100%;
+        background-image: url('../images/overlay/overlay480x320.png');
+    }
+    .cover-img{
+        background-size: 100% 100%;
+    }
 }
 
 @media only screen and (min-width : 768px) {
-
+     .overlay{
+        background-image: url('../images/1300x800overlay.png');
+    }
 }
 
 @media only screen and (min-width : 992px) {
+    .overlay{
+        background-image: url('../images/1300x800overlay.png');
+        background-size: cover;
+    }
+    .cover-img{
+        background-size: cover;
+    }
     .about-name{
         font-size: 18px;
     }
@@ -1391,6 +1415,9 @@ input:focus, textarea:focus {
 }
 
 @media only screen and (min-width : 1200px) {
+    .overlay{
+        background-image: url('../images/1300x800overlay.png');
+    }
 
 }
 /*-----------------------------------------SIDEBAR SECTION-------------------------------------------*/
