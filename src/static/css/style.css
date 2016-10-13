@@ -629,7 +629,7 @@ ul, ol {
 	-o-transition: ease .3s;
 	-ms-transition: ease .3s;
 }
-.port-hov:hover{opacity:1;}
+/*.port-hov:hover{opacity:1;}*/
 .port-content {
     padding: 0 20px;
     position: absolute;
@@ -1195,14 +1195,17 @@ input:focus, textarea:focus {
 }
 
 .logo{
-    padding-top: 15px;
-    padding-left: 37px;
+    /*padding-top: 15px;
+    padding-left: 37px;*/
+
 }
 .change-logo{
-    content:url('../images/viimi-logo2.png');
-    padding-top: 10px;
+    /*content:url('../images/viimi-logo2.png');*/
+    content:url('../images/logo-tagline.png');
+
+    /*padding-top: 10px;
     height: 74px;
-    padding-left: 0px;
+    padding-left: 0px;*/
 }
 .cv:hover{
     content:url('../images/cv-dl.png');
@@ -1334,6 +1337,7 @@ input:focus, textarea:focus {
     opacity: 0.6;
 }
 
+
 /*-----------------------------media queries-----------------------------------*/
 @media only screen and (min-width : 320px) {
 
@@ -1356,20 +1360,9 @@ input:focus, textarea:focus {
     .team-keith, .team-izabela{
         text-align: center;
     }
-    
-    .change-logo{
-        padding-top: 0px;
-        padding-left: 0px;
-        height: auto;
-    }
 }
 
 @media only screen and (min-width : 480px) {
-    .change-logo{
-        padding-top: 0px;
-        padding-left: 0px;
-        height: auto;
-    }
     .overlay{
         background-size: 100% 100%;
         background-image: url('../images/overlay/overlay480x320.png');
@@ -1377,12 +1370,29 @@ input:focus, textarea:focus {
     .cover-img{
         background-size: 100% 100%;
     }
+    .logo{
+        padding-top: 8%;
+        display: inline-block;
+        width: 50%;
+    }
+    .change-logo{
+        display: inline-block;
+        padding-top: 0px;
+        width: auto;
+    }
 }
 
 @media only screen and (min-width : 768px) {
      .overlay{
         background-image: url('../images/1300x800overlay.png');
     }
+    .logo{
+        display: inline-block;
+    }
+    .change-logo{
+        display: inline-block;
+    }
+
 }
 
 @media only screen and (min-width : 992px) {
@@ -1411,6 +1421,13 @@ input:focus, textarea:focus {
     .team-spacing{
         height: 35px;
     }
+    .logo{
+        display: block;
+    }
+    .change-logo{
+        display: block;
+    }
+
 
 }
 
@@ -1418,6 +1435,13 @@ input:focus, textarea:focus {
     .overlay{
         background-image: url('../images/1300x800overlay.png');
     }
+    .logo{
+        display: block;
+    }
+    .change-logo{
+        display: block;
+    }
+
 
 }
 /*-----------------------------------------SIDEBAR SECTION-------------------------------------------*/

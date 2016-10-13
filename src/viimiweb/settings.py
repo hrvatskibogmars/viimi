@@ -109,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Zagreb'
 
 USE_I18N = True
 
@@ -135,21 +135,11 @@ MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "media")
 
 # settings.py
 # Make sure to replace with your own values, theses are just made up
-
-CKEDITOR_CONFIGS = {
-    'awesome_ckeditor': {
-        'toolbar': 'Basic',
-    },
-}
-TINYMCE_DEFAULT = {
-'theme': 'modern',
-'plugins': 'noneditable advlist autolink link lists charmap hr searchreplace wordcount visualblocks visualchars code insertdatetime save table contextmenu directionality paste textcolor',
-'toolbar': 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | forecolor backcolor | upload_button',
-'noneditable_leave_contenteditable': 'true',
-'setup': 'addCustomButtons',
-'content_css': os.path.join(STATIC_URL, "/static/css/style.css"),
-'relative_urls': False,
-'remove_script_host': True,
-'document_base_url': 'viimiweb',
-'removed_menuitems': 'newdocument',
+TINYMCE_DEFAULT_CONFIG = {
+    'theme': 'modern',
+    'fontsize_formats': "8px 9px 10px 11px 12px 14px 26px 36px",
+    'plugins': 'wordcount advlist',
+    'toolbar1': 'bold italic underline | alignleft aligncenter alignright alignjustify '
+               '| bullist numlist | outdent indent | table | link image | codesample | preview code | fontsizeselect',
+ 
 }

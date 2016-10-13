@@ -169,32 +169,39 @@
                         $('.logo').removeClass('vcenter');
                         $('.sticky-wrapper').removeClass('shrink');
                 }
-            },6000)
+            },12000)
 
         }
+        //6000
         popNavBar();
-        setInterval(popNavBar, 3000);
 
+        var hover_show;
+        var index = 0;
+        var duration = 3000; 
+        
         function loopProjects() {
-            var duration = 3000; 
             $('.port-hov').each(function(index,item) {
-                //console.log(item)
+                index = index + 1;
                 setTimeout(function(){
                     $(item).mouseenter();},duration);
                 
                 duration = duration + 3000;
-        
+                
                 setTimeout(function(){
-                        $(item).mouseleave();
-                    },duration);
+                    if (!$(item).is(":hover")){
+                        $(item).mouseleave();}},duration);
             });
         }
-        loopProjects();
-        setInterval(loopProjects, 30000);
+        
+        //loopProjects();
+        setInterval(loopProjects, index * 4000);
+        console.log(index * 4000);
+        console.log(duration);
     });
 
 
     //isotope setting(portfolio)
+    /*
     var $container = $('.portfolio-body');
     $container.imagesLoaded(function () {
         $container.isotope();
@@ -220,7 +227,7 @@
         speed: 5000,
         effect: 'fade'
     });
-*/
+    */
 	//add class on touch device
 	if (Modernizr.touch) {
 			$('body').addClass('no-para');
