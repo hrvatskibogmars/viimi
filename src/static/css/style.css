@@ -1360,20 +1360,40 @@ input:focus, textarea:focus {
     .team-keith, .team-izabela{
         text-align: center;
     }
+    .logo{
+        display: inline-block;
+        width: auto;
+        padding-top: 14px;
+    }
+    .change-logo{
+        display: inline-block;
+        padding-top: 14px;
+        width: auto;
+    }
 }
+@media only screen and (min-width : 375px) {
+    .logo{
+        display: inline-block;
+        width: auto;
+        padding-top: 7px;
+    }
+    .change-logo{
+        display: inline-block;
+        padding-top: 7px;
+        width: auto;
+    }
 
-@media only screen and (min-width : 480px) {
+@media only screen and (min-width : 425px) {
     .overlay{
         background-size: 100% 100%;
         background-image: url('../images/overlay/overlay480x320.png');
     }
     .cover-img{
-        background-size: 100% 100%;
+        /*background-size: 100% 100%;*/
     }
     .logo{
-        /*padding-top: 8%;*/
         display: inline-block;
-        width: 55%;
+        padding-top: 0px;
     }
     .change-logo{
         display: inline-block;
