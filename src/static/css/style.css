@@ -1371,9 +1371,9 @@ input:focus, textarea:focus {
         background-size: 100% 100%;
     }
     .logo{
-        padding-top: 8%;
+        /*padding-top: 8%;*/
         display: inline-block;
-        width: 50%;
+        width: 55%;
     }
     .change-logo{
         display: inline-block;
@@ -1388,9 +1388,14 @@ input:focus, textarea:focus {
     }
     .logo{
         display: inline-block;
+        padding-top: 0px;
+        width: auto;
+
     }
     .change-logo{
         display: inline-block;
+        padding-top: 0px;
+
     }
 
 }
@@ -1423,12 +1428,15 @@ input:focus, textarea:focus {
     }
     .logo{
         display: block;
+        padding-top: 0px;
+        width: auto;
+
+
     }
     .change-logo{
         display: block;
+        padding-top: 0px;
     }
-
-
 }
 
 @media only screen and (min-width : 1200px) {
@@ -1437,9 +1445,15 @@ input:focus, textarea:focus {
     }
     .logo{
         display: block;
+        padding-top: 0px;
+        width: auto;
+
+
     }
     .change-logo{
         display: block;
+        padding-top: 0px;
+
     }
 
 
