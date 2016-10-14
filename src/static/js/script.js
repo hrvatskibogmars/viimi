@@ -169,7 +169,7 @@
                         $('.logo').removeClass('vcenter');
                         $('.sticky-wrapper').removeClass('shrink');
                 }
-            },12000)
+            },6000)
 
         }
         //6000
