@@ -195,8 +195,8 @@
         
         //loopProjects();
         setInterval(loopProjects, index * 4000);
-        console.log(index * 4000);
-        console.log(duration);
+        //console.log(index * 4000);
+        //console.log(duration);
     });
 
 
