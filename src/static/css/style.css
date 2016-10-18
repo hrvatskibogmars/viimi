@@ -1497,6 +1497,12 @@ input:focus, textarea:focus {
         display: block;
         padding-top: 0px;
     }
+}
+@media only screen and (min-width : 992px) and (max-width: 1122px){
+    .navigation li a{
+        letter-spacing: 0px;
+        font-size: 15px;
+    }
     .post-name{
         font-size: 9px;
     }
@@ -1504,12 +1510,6 @@ input:focus, textarea:focus {
         font-size: 16px;
     }
 
-}
-@media only screen and (min-width : 992px) and (max-width: 1122px){
-    .navigation li a{
-        letter-spacing: 0px;
-        font-size: 15px;
-    }
 }
 
 @media only screen and (min-width : 1200px) {
@@ -1524,6 +1524,12 @@ input:focus, textarea:focus {
     .change-logo{
         display: block;
         padding-top: 0px;
+    }
+    .post-name{
+        font-size: 12px;
+    }
+    .about-name{
+        font-size: 18px;
     }
 }
 /*-----------------------------------------SIDEBAR SECTION-------------------------------------------*/
