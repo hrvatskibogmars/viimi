@@ -1259,7 +1259,7 @@ input:focus, textarea:focus {
 }
 
 .mrs{
-        text-align: justify;
+    text-align: justify;
 }
 .pdf:hover{
     color: #3E848E;
@@ -1281,11 +1281,11 @@ input:focus, textarea:focus {
 }
 
 .team-keith{
-    text-align: right;
+    text-align: center;
     letter-spacing: 1px;
 }
 .team-izabela{
-    text-align: left;
+    text-align: center;
     letter-spacing: 1px;
 }
 .email{
@@ -1480,10 +1480,10 @@ input:focus, textarea:focus {
         height: 240px;
     }
     .team-keith{
-        text-align: right;
+        text-align: center;
     }
     .team-izabela{
-        text-align: left;
+        text-align: center;
     }
     .team-spacing{
         height: 35px;
