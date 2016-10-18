@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 """
 
 import os
+import raven
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -39,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'web',
     'tinymce',
+    'raven.contrib.django.raven_compat',
+
 
 ]
 
@@ -142,4 +146,11 @@ TINYMCE_DEFAULT_CONFIG = {
     'toolbar1': 'bold italic underline | alignleft aligncenter alignright alignjustify '
                '| bullist numlist | outdent indent | table | link image | codesample | preview code | fontsizeselect',
  
+}
+
+RAVEN_CONFIG = {
+    'dsn': 'https://02c041b2c50e4d609c849ea6843fd3fb:b54ba42482514fdeb52e4b41342fcbc5@sentry.io/106980',
+    # If you are using git, you can also automatically configure the
+    # release based on the git info.
+    #'release': raven.fetch_git_sha(os.path.dirname(__file__)),
 }
