@@ -1501,7 +1501,7 @@ input:focus, textarea:focus {
 @media only screen and (min-width : 992px) and (max-width: 1122px){
     .navigation li a{
         letter-spacing: 0px;
-        font-size: 15px;
+        font-size: 13px;
     }
     .post-name{
         font-size: 9px;
@@ -1513,6 +1513,12 @@ input:focus, textarea:focus {
 }
 
 @media only screen and (min-width : 1200px) {
+    .post-name{
+        font-size: 9px;
+    }
+    .about-name{
+        font-size: 15px;
+    }
     .overlay{
         background-image: url('../images/1300x800overlay.png');
     }
