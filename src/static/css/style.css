@@ -1497,6 +1497,13 @@ input:focus, textarea:focus {
         display: block;
         padding-top: 0px;
     }
+    .post-name{
+        font-size: 9px;
+    }
+    .about-name{
+        font-size: 16px;
+    }
+
 }
 @media only screen and (min-width : 992px) and (max-width: 1122px){
     .navigation li a{
