@@ -1200,12 +1200,7 @@ input:focus, textarea:focus {
 
 }
 .change-logo{
-    /*content:url('../images/viimi-logo2.png');*/
-    content:url('../images/logo-tagline.png');
-
-    /*padding-top: 10px;
-    height: 74px;
-    padding-left: 0px;*/
+    content:url('../images/logo-tagline1.png');
 }
 .cv:hover{
     content:url('../images/cv-dl.png');
@@ -1393,11 +1388,11 @@ input:focus, textarea:focus {
     .logo{
         display: inline-block;
         width: auto;
-        padding-top: 14px;
+        padding-top: 13px;
     }
     .change-logo{
         display: inline-block;
-        padding-top: 14px;
+        padding-top: 13px;
         width: auto;
     }
 }
