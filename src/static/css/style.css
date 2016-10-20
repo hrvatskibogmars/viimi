@@ -1200,7 +1200,7 @@ input:focus, textarea:focus {
 
 }
 .change-logo{
-    content:url('../images/logo-tagline1.png');
+    content:url('../images/logo-tagline.png');
 }
 .cv:hover{
     content:url('../images/cv-dl.png');
