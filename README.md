@@ -9,7 +9,7 @@ description "Gunicorn daemon for Django project"
 start on (local-filesystems and net-device-up IFACE=eth0)
 stop on runlevel [!12345]
 
-# If the process quits unexpectadly trigger a respawn
+If the process quits unexpectadly trigger a respawn
 respawn
 
 setuid django
